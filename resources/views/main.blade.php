@@ -169,7 +169,7 @@
         <div class="container">
             <div class="insurance-boxes-inner">
                 <div class="row">
-                    <div class="insurance-photo col-sm-12 col-md-6 mt-md-5 mb-md-5">
+                    <div class="insurance-photo col-sm-12 col-md-6 mt-md-2 mb-md-2">
                         <img src="{{ asset('assets/img/1.png') }}" class="card-img-top" alt="...">
                     </div>
                     <div class="insurance-title col-sm-12 col-md-6 mtb-50 rounded  shadow">
@@ -183,21 +183,21 @@
                     <div class="insurance-photo d-md-none col-sm-12 col-md-6 mtb-70 ">
                         <img src="{{ asset('assets/img/2.png') }}" class="card-img-top" alt="...">
                     </div>
-                    <div class="insurance-title col-sm-12 col-md-6 mtb-50  rounded  shadow">
-                        <h3 class="pt-3 mt-2">
+                    <div class="insurance-title col-sm-12 col-md-6 mt-3 mt-md-2 mb-md-2  rounded  shadow">
+                        <h3 class="pt-5 mt-5">
                             بیمه آتش سوزی و مزایا
                         </h3>
                         <p class="insurance-desc p-5">
                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
                         </p>
                     </div>
-                    <div class="insurance-photo d-none d-md-block col-sm-12 col-md-6 mtb-70 ">
+                    <div class="insurance-photo d-none d-md-block col-sm-12 col-md-6  ">
                         <img src="{{ asset('assets/img/2.png') }}" class="card-img-top" alt="...">
                     </div>
-                    <div class="insurance-photo col-sm-12 col-md-6 mtb-70 ">
+                    <div class="insurance-photo col-sm-12 col-md-6 ">
                         <img src="{{ asset('assets/img/3.png') }}" class="card-img-top" alt="...">
                     </div>
-                    <div class="insurance-title col-sm-12 col-md-6 mtb-50  rounded  shadow">
+                    <div class="insurance-title col-sm-12 col-md-6  rounded mt-3 mt-md-2 mb-md-2    shadow">
                         <h3 class="pt-3 mt-2">
                             بیمه عمر و مزایا
                         </h3>
@@ -205,10 +205,10 @@
                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
                         </p>
                     </div>
-                    <div class="insurance-photo d-md-none  col-sm-12 col-md-6 mtb-70 ">
+                    <div class="insurance-photo d-md-none  col-sm-12 col-md-6 ">
                         <img src="{{ asset('assets/img/5.png') }}" class="card-img-top" alt="...">
                     </div>
-                    <div class="insurance-title col-sm-12 col-md-6 mtb-50  rounded  shadow">
+                    <div class="insurance-title col-sm-12 col-md-6 rounded mt-3 mt-md-2 mb-md-2   shadow">
                         <h3 class="pt-3 mt-2">
                             بیمه سرقت و مزایا
                         </h3>
@@ -216,7 +216,7 @@
                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
                         </p>
                     </div>
-                    <div class="insurance-photo d-none d-md-block col-sm-12 col-md-6 mtb-70 ">
+                    <div class="insurance-photo d-none d-md-block col-sm-12 col-md-6  ">
                         <img src="{{ asset('assets/img/5.png') }}" class="card-img-top" alt="...">
                     </div>
                 </div>
