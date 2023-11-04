@@ -38,8 +38,8 @@
                     <ul class="list">
                         <li><a href="#">خدمات</a></li>
                         <li><a href="#">انواع بیمه</a></li>
-                        <li><a href="#">لوح تقدیر</a></li>
-                        <li><a href="#">آخرین مقالات ما</a></li>
+                        <li><a href="{{ route('about_us') }}">لوح تقدیر</a></li>
+                        <li><a href="{{ route('weblog') }}">آخرین مقالات ما</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,9 +49,9 @@
                     <h3>پشتیبانی</h3>
 
                     <ul class="list">
-                        <li><a href="#">شبکه های اجتماعی</a></li>
-                        <li><a href="#">درباره ما</a></li>
-                        <li><a href="#">تماس با ما</a></li>
+                        {{--<li><a href="#">شبکه های اجتماعی</a></li>--}}
+                        <li><a href="{{ route('about_us') }}">درباره ما</a></li>
+                        <li><a href="{{ route('weblog') }}">وبلاگ</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,10 +61,10 @@
                     <h3>راه های ارتباطی</h3>
 
                     <ul class="footer-contact-info">
-                        <li><span>آدرس:</span>درج آدرس</li>
+                        <li><span>آدرس:</span>اتوبان شهید محلاتی - نرسیده به مخبر شمالی - ساختمان شیشه ای یاران - پلاک 397 - طبقه سوم</li>
                         <li><span>پست الکترونیک:</span> <a href="#">درج ایمیل</a></li>
-                        <li><span>تلفن:</span> <a href="#">درج تلفن</a></li>
-                        <li><span>فکس:</span> <a href="#">درج فکس</a></li>
+                        <li><span>تلفن:</span> <a href="tel:02135868">021-35868</a></li>
+                        <li><span>فکس:</span> <a href="tel:02133715330">021-33715330</a></li>
                     </ul>
                 </div>
             </div>
