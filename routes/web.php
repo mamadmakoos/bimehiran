@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 /* For static pages */
 Route::get('/', [HomeController::class,'main'])->name('home');
 Route::get('/about-us', [HomeController::class,'aboutUs'])->name('about_us');
+Route::get('/weblog', [HomeController::class,'weblog'])->name('weblog');
