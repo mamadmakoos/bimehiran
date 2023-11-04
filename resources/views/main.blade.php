@@ -3,7 +3,6 @@
     <title>ییمه ایران | نمایندگی عامری 5799</title>
 @endsection
 @section("content")
-
     <!-- Start Main Banner Area ( home section 1 ) -->
     <div class="main-banner jarallax" data-jarallax='{"speed": 0.3}'>
         <div class="d-table">

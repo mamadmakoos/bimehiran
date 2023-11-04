@@ -13,5 +13,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+/* For static pages */
 Route::get('/', [HomeController::class,'main'])->name('home');
+Route::get('/about-us', [HomeController::class,'aboutUs'])->name('about_us');

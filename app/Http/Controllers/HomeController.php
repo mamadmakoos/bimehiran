@@ -9,4 +9,7 @@ class HomeController extends Controller
     public  function main(){
         return view('main');
     }
+    public  function aboutUs(){
+        return view('about');
+    }
 }

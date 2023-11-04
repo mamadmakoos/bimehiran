@@ -59,7 +59,7 @@
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">صفحه اصلی</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">درباره ما</a></li>
+                        <li class="nav-item"><a href="{{ route('about_us') }}" class="nav-link">درباره ما</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">وبلاگ</a></li>
 
                     </ul>
