@@ -172,6 +172,10 @@
         height: 35px;
         line-height: 35px
     }
+    #team{
+        margin: 0 !important;
+        padding-top: 0 !important;
+    }
 }
 @media only screen and (min-width:576px) and (max-width:767px) {
     .featured-boxes-inner .col-lg-3 {
