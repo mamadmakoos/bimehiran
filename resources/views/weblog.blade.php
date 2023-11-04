@@ -17,7 +17,7 @@
                 <h2>درباره ما</h2>
                 <p>معرفی شرکت ما</p>
             </div>
-        </div>
+        </div> 
     </div>
     <!-- End Page Title ( about us section 1 ) Area -->
 @endsection
