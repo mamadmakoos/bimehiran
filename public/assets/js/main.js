@@ -107,7 +107,7 @@
 		});
 		$('.partner-slides').owlCarousel({
 			loop: true,
-			nav: false,
+			nav: true,
 			dots: false,
 			rtl: true,
 			autoplayHoverPause: true,
@@ -116,16 +116,16 @@
 			navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
 			responsive: {
 				0: {
-					items: 2,
-				},
-				576: {
 					items: 3,
 				},
-				768: {
+				576: {
 					items: 4,
 				},
-				992: {
+				768: {
 					items: 5,
+				},
+				992: {
+					items: 6,
 				}
 			}
 		});
@@ -145,4 +145,34 @@
 	jQuery(window).on('load', function() {
 		$('.preloader').fadeOut();
 	});
+
+	// blog and Testimonial carousel
+	$(".blog-carousel, .testimonial-carousel").owlCarousel({
+		autoplay: true,
+		smartSpeed: 1000,
+		margin: 25,
+		loop: true,
+		center: true,
+		dots: false,
+		nav: true,
+		navText : [
+			'<i class="bi bi-chevron-left"></i>',
+			'<i class="bi bi-chevron-right"></i>'
+		],
+		responsive: {
+			0:{
+				items:1
+			},
+			576:{
+				items:1
+			},
+			768:{
+				items:2
+			},
+			992:{
+				items:3
+			}
+		}
+	});
+
 }(jQuery));

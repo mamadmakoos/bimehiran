@@ -9,33 +9,41 @@ body {
     font-size: 15px
 }
 
+/* text align justify */
+.text-justify{
+    text-align: justify !important;
+}
 /* custom back colors */
-.bg1{
+.bg1 {
     background-color: #29166F;
 }
-.y-g-bg{
+
+.y-g-bg {
     border-radius: 30px;
     padding: 20px;
-    background: rgba(255,179,0,0.3);
+    background: rgba(255, 179, 0, 0.3);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,179,0,0.15);
+    border: 1px solid rgba(255, 179, 0, 0.15);
 }
-.b-g-bg{
+
+.b-g-bg {
     border-radius: 30px;
     padding: 20px;
-    background: rgba(41,22,111,0.3);
+    background: rgba(41, 22, 111, 0.3);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(41,22,111,0.15);
+    border: 1px solid rgba(41, 22, 111, 0.15);
 }
-.blue-gradient{
+
+.blue-gradient {
     border-radius: 30px;
     padding: 20px;
     background: #0093dd;
     background: -webkit-radial-gradient(circle, #0093dd 0%, #29166f 100%);
     background: radial-gradient(circle, #0093dd 0%, #29166f 100%);
 }
+
 /* img style */
 img {
     max-width: 100%
@@ -46,6 +54,7 @@ img {
     width: 100%;
     height: 100%
 }
+
 .d-table-cell {
     vertical-align: middle
 }
@@ -56,8 +65,9 @@ a {
     text-decoration: none;
     -webkit-transition: .5s;
     transition: .5s;
-    outline: 0!important
+    outline: 0 !important
 }
+
 a:hover {
     color: #29166F;
     text-decoration: none
@@ -66,7 +76,7 @@ a:hover {
 
 /* button style */
 button {
-    outline: 0!important
+    outline: 0 !important
 }
 
 /* padding top & bottom style */
@@ -79,6 +89,7 @@ button {
 .bg-f7fafd {
     background-color: #f7fafd
 }
+
 .bg-f6f4f8 {
     background-color: #f6f4f8
 }
@@ -87,14 +98,16 @@ button {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: Vazirmatn RD FD, sans-serif
 }
+
 p {
-    text-align: justify !important;
+/*    text-align: justify !important;*/
     line-height: 1.7;
     margin-bottom: 15px;
     color: #0093dd;
     font-weight: 300;
     font-size: 15px
 }
+
 p:last-child {
     margin-bottom: 0
 }
@@ -119,6 +132,7 @@ p:last-child {
     transition: .9s;
     color: #fff
 }
+
 .go-top.active {
     top: 98%;
     -webkit-transform: translateY(-98%);
@@ -126,6 +140,7 @@ p:last-child {
     opacity: 1;
     visibility: visible
 }
+
 .go-top::before {
     border-radius: 50%;
     content: '';
@@ -135,19 +150,22 @@ p:last-child {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(90deg,#0093dd 0%,  #29166f 100%);
+    background: linear-gradient(90deg, #0093dd 0%, #29166f 100%);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .5s;
     transition: .5s
 }
+
 .go-top:hover, .go-top:focus {
     color: #fff
 }
+
 .go-top:hover::before, .go-top:focus::before {
     opacity: 1;
     visibility: visible
 }
+
 /* btn style */
 .btn {
     font-weight: 700;
@@ -162,13 +180,16 @@ p:last-child {
     position: relative;
     z-index: 1
 }
+
 .btn.disabled, .btn:disabled {
     opacity: 1
 }
+
 .btn-primary {
     background-color: transparent;
     color: #fff
 }
+
 .btn-primary::before {
     content: '';
     position: absolute;
@@ -183,6 +204,7 @@ p:last-child {
     -webkit-transition: .5s;
     transition: .5s
 }
+
 .btn-primary::after {
     content: '';
     position: absolute;
@@ -192,22 +214,26 @@ p:last-child {
     height: 100%;
     z-index: -1;
     background: -webkit-gradient(linear, left top, right top, from(#0093dd), to(#29166F));
-    background: linear-gradient(90deg, #0093dd 0%, #29166F 100%);	border-radius: 4px;
+    background: linear-gradient(90deg, #0093dd 0%, #29166F 100%);
+    border-radius: 4px;
     -webkit-transition: .5s;
     transition: .5s;
     opacity: 0;
     visibility: hidden
 }
+
 .btn-primary:hover, .btn-primary:focus {
-    background-color: transparent!important;
-    color: #fff!important;
-    -webkit-box-shadow: unset!important;
-    box-shadow: unset!important
+    background-color: transparent !important;
+    color: #fff !important;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important
 }
+
 .btn-primary:hover::before, .btn-primary:focus::before {
     opacity: 0;
     visibility: hidden
 }
+
 .btn-primary:hover::after, .btn-primary:focus::after {
     opacity: 1;
     visibility: visible
@@ -223,11 +249,13 @@ p:last-child {
     margin-bottom: 50px;
     margin-top: -9px
 }
+
 .section-title h2 {
     margin-bottom: 0;
     font-size: 40px;
     font-weight: 600
 }
+
 .section-title .bar {
     height: 5px;
     width: 90px;
@@ -236,6 +264,7 @@ p:last-child {
     position: relative;
     border-radius: 30px
 }
+
 .section-title .bar::before {
     content: '';
     position: absolute;
@@ -254,6 +283,7 @@ p:last-child {
     -webkit-animation-name: MOVE-BG;
     animation-name: MOVE-BG
 }
+
 .section-title p {
     max-width: 500px;
     margin-left: auto;
@@ -274,9 +304,10 @@ p:last-child {
     -webkit-transition: .5s;
     transition: .5s
 }
+
 .form-control:focus {
-    -webkit-box-shadow: unset!important;
-    box-shadow: unset!important;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
     border-color: #29166F
 }
 
@@ -291,6 +322,7 @@ p:last-child {
     top: 0;
     left: 0
 }
+
 .preloader .loader {
     position: absolute;
     top: 43%;
@@ -303,6 +335,7 @@ p:last-child {
     width: 50px;
     height: 50px
 }
+
 .preloader .box {
     width: 100%;
     height: 100%;
@@ -314,6 +347,7 @@ p:last-child {
     left: 0;
     border-radius: 3px
 }
+
 .preloader .shadow {
     width: 100%;
     height: 5px;
@@ -326,6 +360,7 @@ p:last-child {
     -webkit-animation: shadow .5s linear infinite;
     animation: shadow .5s linear infinite
 }
+
 @-webkit-keyframes loader {
     0% {
         left: -100px
@@ -334,6 +369,7 @@ p:last-child {
         left: 110%
     }
 }
+
 @keyframes loader {
     0% {
         left: -100px
@@ -342,6 +378,7 @@ p:last-child {
         left: 110%
     }
 }
+
 @-webkit-keyframes animate {
     17% {
         border-bottom-right-radius: 3px
@@ -364,6 +401,7 @@ p:last-child {
         transform: translateY(0) rotate(90deg)
     }
 }
+
 @keyframes animate {
     17% {
         border-bottom-right-radius: 3px
@@ -386,12 +424,14 @@ p:last-child {
         transform: translateY(0) rotate(90deg)
     }
 }
+
 @-webkit-keyframes shadow {
     50% {
         -webkit-transform: scale(1.2, 1);
         transform: scale(1.2, 1)
     }
 }
+
 @keyframes shadow {
     50% {
         -webkit-transform: scale(1.2, 1);
@@ -403,14 +443,17 @@ p:last-child {
 .Makoos-responsive-nav {
     display: none
 }
+
 .navbar-brand {
     padding-top: 0;
     padding-bottom: 0
 }
+
 .navbar-brand img {
     -webkit-transition: .5s;
     transition: .5s
 }
+
 .Makoos-nav {
     background-color: transparent;
     padding-top: 0;
@@ -418,25 +461,30 @@ p:last-child {
     padding-right: 0;
     padding-left: 0
 }
+
 .Makoos-nav .navbar {
     padding-right: 0;
     padding-top: 0;
     padding-left: 0;
     padding-bottom: 0
 }
+
 .Makoos-nav .navbar ul {
     padding-left: 0;
     list-style-type: none;
     margin-bottom: 0
 }
+
 .Makoos-nav .navbar .navbar-nav {
     font-family: Vazirmatn RD FD, sans-serif;
     margin-left: auto
 }
+
 .Makoos-nav .navbar .navbar-nav {
 
     margin-right: 0 !important;
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item {
     position: relative;
     padding-top: 10px;
@@ -444,6 +492,7 @@ p:last-child {
     padding-left: 0;
     padding-right: 0
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item a {
     font-size: 17px;
     font-weight: 500;
@@ -456,22 +505,28 @@ p:last-child {
     margin-left: 15px;
     margin-right: 15px
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item a:hover, .Makoos-nav .navbar .navbar-nav .nav-item a:focus, .Makoos-nav .navbar .navbar-nav .nav-item a.active {
     color: #E77919
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item a i {
     font-size: 10px;
     margin-left: 1px
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item:last-child a {
     margin-right: 0
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item:first-child a {
     margin-left: 0
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item:hover a, .Makoos-nav .navbar .navbar-nav .nav-item.active a {
     color: #E77919
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu {
     -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
@@ -493,12 +548,14 @@ p:last-child {
     padding-right: 5px;
     padding-bottom: 20px
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
     text-transform: capitalize;
     padding: 8px 15px;
@@ -507,151 +564,188 @@ p:last-child {
     font-size: 15.5px;
     font-weight: 500
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
     left: -250px;
     top: 0;
     opacity: 0;
     visibility: hidden
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
     left: 220px;
     top: 0;
     opacity: 0;
     visibility: hidden
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
     left: -250px;
     top: 0;
     opacity: 0;
     visibility: hidden
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
     left: -250px;
     top: 0;
     opacity: 0;
     visibility: hidden
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
     left: -250px;
     top: 0;
     opacity: 0;
     visibility: hidden
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
     left: -250px;
     top: 0;
     opacity: 0;
     visibility: hidden
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     top: -15px
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     top: -15px
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     top: -15px
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     top: -15px
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     top: -15px
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
     color: #29166F
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     top: -15px
 }
+
 .Makoos-nav .navbar .navbar-nav .nav-item:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     top: 100%
 }
+
 .Makoos-nav .navbar .others-options {
     margin-right: auto !important;
     margin-left: 0 !important;
 }
+
 .Makoos-nav .navbar .others-options .login-btn {
     color: #ffffff;
     font-size: 17px;
     font-weight: 500;
     font-family: Vazirmatn RD FD, sans-serif
 }
+
 .Makoos-nav .navbar .others-options .login-btn i {
     margin-right: 2px;
     color: #E77919
 }
+
 .Makoos-nav .navbar .others-options .login-btn:hover {
     color: #E77919
 }
+
 .navbar-area {
     position: absolute;
     left: 0;
@@ -665,6 +759,7 @@ p:last-child {
     padding-top: 20px;
     padding-bottom: 20px
 }
+
 .navbar-area.is-sticky {
     position: fixed;
     top: 0;
@@ -673,207 +768,270 @@ p:last-child {
     z-index: 999;
     -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, .06);
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, .06);
-    background-color: #fff!important;
+    background-color: #fff !important;
     -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     -webkit-transition: .5s;
     transition: .5s;
     border-radius: 500px !important;
 }
+
 .navbar-area.is-sticky .Makoos-nav {
     background-color: #fff;
     border-radius: 500px !important;
 
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item a {
     color: #E77919
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item a.active {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item:hover a, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item.active a {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .others-options .login-btn {
     color: #E77919
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .others-options .login-btn i {
     color: #29166F
 }
+
 .navbar-area.is-sticky .Makoos-nav .navbar .others-options .login-btn:hover {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .navbar-brand img {
-    display: block!important
+    display: block !important
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item a {
     color: #E77919
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item a.active {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item:hover a, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item.active a {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
     color: #E77919
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
     color: #29166F
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .others-options .login-btn {
     color: #E77919
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .others-options .login-btn i {
     color: #E77919
 }
+
 .navbar-area.navbar-style-two .Makoos-nav .others-options .login-btn:hover {
     color: #29166F
 }
-@media only screen and (max-width:991px) {
+
+@media only screen and (max-width: 991px) {
     .Makoos-responsive-nav {
         display: block
     }
+
     .Makoos-responsive-nav .Makoos-responsive-menu {
         position: relative
     }
+
     .Makoos-responsive-nav .Makoos-responsive-menu.mean-container .mean-nav ul {
         font-size: 14px
     }
+
     .Makoos-responsive-nav .Makoos-responsive-menu.mean-container .mean-nav ul li a.active {
         color: #29166F
     }
+
     .Makoos-responsive-nav .Makoos-responsive-menu.mean-container .mean-nav ul li li a {
         font-size: 13.5px
     }
+
     .Makoos-responsive-nav .Makoos-responsive-menu.mean-container .navbar-nav {
         overflow-y: scroll;
         height: 350px;
         -webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, .1);
         box-shadow: 0 7px 13px 0 rgba(0, 0, 0, .1)
     }
+
     .Makoos-responsive-nav .mean-container a.meanmenu-reveal {
         color: #fff
     }
+
     .Makoos-responsive-nav .mean-container a.meanmenu-reveal span {
         background: #fff
     }
-    @media only screen and (max-width:767px) {
-        .Makoos-responsive-nav .logo{
+
+    @media only screen and (max-width: 767px) {
+        .Makoos-responsive-nav .logo {
             position: relative;
             width: 45px !important;
             height: 40px !important;
@@ -884,73 +1042,93 @@ p:last-child {
     .Makoos-responsive-nav .logo a img:nth-child(2) {
         display: none
     }
+
     .Makoos-responsive-nav .others-options {
         position: absolute;
         right: 52px;
         top: 3px
     }
+
     .Makoos-responsive-nav .others-options .login-btn {
         color: #fff;
         font-size: 15px;
         font-weight: 400;
         font-family: Vazirmatn RD FD, sans-serif
     }
+
     .Makoos-responsive-nav .others-options .login-btn i {
         margin-right: 2px;
-        color: #E77919 ;
+        color: #E77919;
     }
+
     .Makoos-responsive-nav .others-options .login-btn:hover {
         color: #29166F
     }
+
     .navbar-area {
         border-bottom: 1px solid rgba(255, 255, 255, .09);
         padding-top: 15px;
         padding-bottom: 15px
     }
+
     .navbar-area.is-sticky {
         border-bottom: none;
         -webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, .1);
         box-shadow: 0 7px 13px 0 rgba(0, 0, 0, .1)
     }
+
     .navbar-area.is-sticky .Makoos-responsive-nav .mean-container a.meanmenu-reveal {
         color: #E77919
     }
+
     .navbar-area.is-sticky .Makoos-responsive-nav .mean-container a.meanmenu-reveal span {
         background: #E77919
     }
+
     .navbar-area.is-sticky .Makoos-responsive-nav .logo a img:nth-child(1) {
         display: none
     }
+
     .navbar-area.is-sticky .Makoos-responsive-nav .logo a img:nth-child(2) {
         display: block
     }
+
     .navbar-area.is-sticky .Makoos-responsive-nav .others-options .login-btn {
         color: #E77919
     }
+
     .navbar-area.is-sticky .Makoos-responsive-nav .others-options .login-btn i {
         color: #29166F
     }
+
     .navbar-area.is-sticky .Makoos-responsive-nav .others-options .login-btn:hover {
         color: #29166F
     }
+
     .navbar-area.navbar-style-two .Makoos-responsive-nav .mean-container a.meanmenu-reveal {
         color: #E77919
     }
+
     .navbar-area.navbar-style-two .Makoos-responsive-nav .mean-container a.meanmenu-reveal span {
         background: #E77919
     }
+
     .navbar-area.navbar-style-two .Makoos-responsive-nav .logo a img {
-        display: inline-block!important
+        display: inline-block !important
     }
+
     .navbar-area.navbar-style-two .Makoos-responsive-nav .others-options .login-btn {
         color: #E77919
     }
+
     .navbar-area.navbar-style-two .Makoos-responsive-nav .others-options .login-btn i {
         color: #29166F
     }
+
     .navbar-area.navbar-style-two .Makoos-responsive-nav .others-options .login-btn:hover {
         color: #29166F
     }
+
     .Makoos-nav {
         display: none
     }
@@ -964,16 +1142,19 @@ p:last-child {
     background-size: cover;
     background-repeat: no-repeat
 }
+
 .main-banner-content {
     margin-top: -20px;
     max-width: 600px
 }
+
 .main-banner-content h1 {
     margin-bottom: 0;
     color: #fff;
     font-size: 52px;
     font-weight: 700
 }
+
 .main-banner-content p {
     color: #fff;
     font-family: Vazirmatn RD FD, sans-serif;
@@ -982,9 +1163,11 @@ p:last-child {
     margin-top: 20px;
     margin-bottom: 0
 }
+
 .main-banner-content .btn {
     margin-top: 30px
 }
+
 .main-banner-section {
     height: 800px;
     background-image: url(../../assets/img/main-banner2.jpg);
@@ -999,6 +1182,7 @@ p:last-child {
     z-index: 1;
     margin-top: -100px
 }
+
 .featured-boxes-inner {
     background-color: #fff;
     border-radius: 5px;
@@ -1006,15 +1190,18 @@ p:last-child {
     box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
     border-radius: 30px !important;
 }
+
 .featured-boxes-inner .col-lg-3:last-child {
     border-right: none
 }
+
 .single-featured-box {
     text-align: center;
     position: relative;
     padding: 115px 25px 40px;
     overflow: hidden
 }
+
 .single-featured-box .icon {
     -webkit-transition: .4s;
     transition: .4s;
@@ -1026,12 +1213,15 @@ p:last-child {
     transform: translate(-50%, 0);
     margin-top: -12px;
 }
-.single-featured-box .icon img{
+
+.single-featured-box .icon img {
     width: 60% !important;
 }
+
 .single-featured-box .icon i::before {
     font-size: 55px
 }
+
 .single-featured-box h3 {
     -webkit-transition: .4s;
     transition: .4s;
@@ -1040,6 +1230,7 @@ p:last-child {
     font-size: 22px;
     font-weight: 600
 }
+
 .single-featured-box p {
     -webkit-transition: .4s;
     transition: .4s;
@@ -1047,6 +1238,7 @@ p:last-child {
     margin-top: 12px;
     margin-bottom: 0
 }
+
 .single-featured-box .read-more-btn {
     background: -webkit-gradient(linear, left top, right top, from(#29166f), to(#0093dd));
     background: linear-gradient(90deg, #29166f 0%, #0093dd 100%);
@@ -1065,6 +1257,7 @@ p:last-child {
     font-size: 15px;
     font-weight: 400
 }
+
 .single-featured-box .read-more-btn::before {
     content: '';
     position: absolute;
@@ -1077,27 +1270,33 @@ p:last-child {
     background: -webkit-gradient(linear, left top, right top, from(#29166f), to(#0093dd));
     background: linear-gradient(90deg, #29166f 0%, #0093dd 100%);
 }
+
 .single-featured-box .read-more-btn:hover::before {
     width: 100%
 }
+
 .single-featured-box:hover .icon {
     top: 23px;
     -webkit-animation: iconTop .4s ease-in-out;
     animation: iconTop .4s ease-in-out
 }
+
 .single-featured-box:hover h3 {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px)
 }
+
 .single-featured-box:hover p {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px)
 }
+
 .single-featured-box:hover .read-more-btn {
     opacity: 1;
     visibility: visible;
     bottom: 23px
 }
+
 @-webkit-keyframes iconTop {
     0% {
         -webkit-transform: translate(-50%, 0);
@@ -1119,6 +1318,7 @@ p:last-child {
         transform: translate(-50%, 0)
     }
 }
+
 @keyframes iconTop {
     0% {
         -webkit-transform: translate(-50%, 0);
@@ -1142,17 +1342,20 @@ p:last-child {
 }
 
 /*  articles area  ( home section 3 ) style */
-.article-area .card img{
+.article-area .card img {
     border-radius: 20px;
 }
-.article-area .card .card-body h5{
+
+.article-area .card .card-body h5 {
     color: #E77919;
     text-decoration: none;
 }
-.article-area .card .card-body p{
+
+.article-area .card .card-body p {
     color: #fff;
 }
-.article-area .card .card-footer{
+
+.article-area .card .card-footer {
     padding: .5rem 1rem !important;
     border-top: 1px solid rgba(20, 17, 17, 0.21) !important;
     background-color: rgba(0, 0, 0, 0);
@@ -1162,16 +1365,19 @@ p:last-child {
 .insurance-boxes-area .container .insurance-boxes-inner .row {
     text-align: center;
 }
+
 .insurance-boxes-area .container .insurance-boxes-inner .row .insurance-photo {
     /*width: 50% !important;*/
     padding: 20px;
 }
+
 .insurance-boxes-area .container .insurance-boxes-inner .row .insurance-title {
     background-color: #fff;
     border-radius: 30px !important;
     align-self: center !important;
 }
-.insurance-boxes-area .container .insurance-boxes-inner .row .insurance-title h3{
+
+.insurance-boxes-area .container .insurance-boxes-inner .row .insurance-title h3 {
     color: #E77919 !important;
 
 }
@@ -1187,6 +1393,7 @@ p:last-child {
     padding-top: 100px;
     padding-bottom: 100px
 }
+
 .account-create-area::before {
     content: '';
     position: absolute;
@@ -1202,9 +1409,11 @@ p:last-child {
     background-position: center;
     background-size: 200%
 }
+
 .account-create-content {
     text-align: center
 }
+
 .account-create-content h2 {
     color: #fff;
     max-width: 530px;
@@ -1214,6 +1423,7 @@ p:last-child {
     font-size: 40px;
     font-weight: 600
 }
+
 .account-create-content p {
     text-align: center !important;
     color: #fff;
@@ -1222,19 +1432,23 @@ p:last-child {
     margin-top: 20px;
     margin-bottom: 0
 }
+
 .account-create-content .btn-primary {
     margin-top: 30px;
     padding: 16px 30px
 }
+
 .account-create-content .btn-primary::before {
-    background: linear-gradient(90deg, #0093dd 0%,  #29166f 100%);
+    background: linear-gradient(90deg, #0093dd 0%, #29166f 100%);
 
 }
+
 .account-create-content .btn-primary::after {
     background: #fff
 }
+
 .account-create-content .btn-primary:hover, .account-create-content .btn-primary:focus {
-    color: #E77919!important
+    color: #E77919 !important
 }
 
 
@@ -1245,48 +1459,59 @@ p:last-child {
     padding-top: 70px;
     background-color: #f7fafd
 }
+
 .single-footer-widget {
     margin-bottom: 30px
 }
+
 .single-footer-widget .logo a {
     display: block
 }
+
 .single-footer-widget .logo p {
     font-size: 14.5px;
     margin-top: 20px;
     margin-bottom: 0
 }
+
 .single-footer-widget h3 {
     margin-bottom: 24px;
     font-size: 22px;
     font-weight: 600
 }
+
 .single-footer-widget .list {
     padding-left: 0;
     margin-bottom: 0;
     list-style-type: none
 }
+
 .single-footer-widget .list li {
     margin-bottom: 10px;
     font-weight: 400;
     font-size: 14.5px
 }
+
 .single-footer-widget .list li a {
     color: #0093dd;
     display: inline-block
 }
+
 .single-footer-widget .list li a:hover {
     padding-left: 5px;
     color: #29166F
 }
+
 .single-footer-widget .list li:last-child {
     margin-bottom: 0
 }
+
 .single-footer-widget .footer-contact-info {
     margin-bottom: 0;
     padding-left: 0;
     list-style-type: none
 }
+
 .single-footer-widget .footer-contact-info li {
     position: relative;
     color: #0093dd;
@@ -1295,30 +1520,37 @@ p:last-child {
     font-weight: 400;
     font-size: 14.5px
 }
+
 .single-footer-widget .footer-contact-info li a {
     color: #0093dd;
     display: inline-block
 }
+
 .single-footer-widget .footer-contact-info li a:hover {
     color: #29166F
 }
+
 .single-footer-widget .footer-contact-info li:last-child {
     margin-bottom: 0
 }
+
 .single-footer-widget .footer-contact-info li span {
     display: inline-block;
     font-weight: 500
 }
+
 .single-footer-widget .social-links {
     padding-left: 0;
     list-style-type: none;
     margin-top: 13px;
     margin-bottom: 0
 }
+
 .single-footer-widget .social-links li {
     margin-right: 2px;
     display: inline-block
 }
+
 .single-footer-widget .social-links li a {
     width: 30px;
     text-align: center;
@@ -1330,6 +1562,7 @@ p:last-child {
     display: inline-block;
     font-size: 14px
 }
+
 .single-footer-widget .social-links li a:hover {
     color: #fff;
     border-color: #29166F;
@@ -1344,18 +1577,22 @@ p:last-child {
     padding-top: 25px;
     padding-bottom: 25px
 }
+
 .copyright-area p {
     text-align: center !important;
     font-size: 14.5px
 }
+
 .copyright-area p a {
     display: inline-block;
     color: #E77919;
     font-weight: 400
 }
+
 .copyright-area p a:hover {
     color: #29166F
 }
+
 .map-image {
     position: absolute;
     left: 0;
@@ -1368,6 +1605,7 @@ p:last-child {
     z-index: -1;
     opacity: .7
 }
+
 .map-image img {
     max-width: 40%
 }
@@ -1376,12 +1614,14 @@ p:last-child {
 #team {
     margin-top: 20px;
 }
+
 .team-item {
     position: relative;
     text-align: center;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
     border-radius: 25px;
 }
+
 .team-item .team-social {
     position: absolute;
     padding: 0;
@@ -1389,6 +1629,7 @@ p:last-child {
     left: 0;
     overflow: hidden;
 }
+
 .team-item .team-social li {
     list-style-type: none;
     margin-bottom: 10px;
@@ -1396,32 +1637,136 @@ p:last-child {
     opacity: 0;
     transition: .5s;
 }
+
 .team-item:hover .team-social li {
     margin-left: 15px;
     opacity: 1;
 }
+
 .team-item .team-social li .btn {
     color: whitesmoke;
     color: var(#E77919);
     border-radius: 40px;
     transition: .5s;
 }
+
 .team-item .team-social li .btn:hover {
     color: #E77919;
     background: #29166f;
 }
+
 .team-item .team-social li:nth-child(1) {
     transition-delay: .1s;
 }
+
 .team-item .team-social li:nth-child(2) {
     transition-delay: .2s;
 }
+
 .team-item .team-social li:nth-child(3) {
     transition-delay: .3s;
 }
+
 .team-item .team-social li:nth-child(4) {
     transition-delay: .4s;
 }
+
 .team-item .team-social li:nth-child(5) {
     transition-delay: .5s;
+}
+
+/*** blog ( about section ) style ***/
+.blog-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.blog-item .blog-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .5);
+    opacity: 0;
+    padding-top: 60px;
+    transition: .5s;
+}
+
+.blog-item:hover .blog-overlay {
+    opacity: 1;
+    padding-top: 0;
+}
+
+.blog-carousel .owl-nav {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    display: flex;
+}
+
+.blog-carousel .owl-nav .owl-prev,
+.blog-carousel .owl-nav .owl-next {
+    margin-left: 15px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    border-radius: 55px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .15);
+    font-size: 25px;
+    transition: .5s;
+}
+
+.blog-carousel .owl-nav .owl-prev:hover,
+.blog-carousel .owl-nav .owl-next:hover {
+    background: var(--primary);
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .blog-carousel .owl-nav {
+        top: -70px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .blog-carousel .owl-nav .owl-prev,
+    .blog-carousel .owl-nav .owl-next {
+        margin: 0 7px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+}
+
+/*** Feature ( about section ) style ***/
+@media (min-width: 992px) {
+    .container.feature {
+        max-width: 100% !important;
+    }
+
+    .feature-text  {
+        padding-left: calc(((100% - 960px) / 2) + .75rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .feature-text  {
+        padding-left: calc(((100% - 1140px) / 2) + .75rem);
+    }
+}
+
+@media (min-width: 1400px) {
+    .feature-text  {
+        padding-left: calc(((100% - 1320px) / 2) + .75rem);
+    }
 }
