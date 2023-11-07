@@ -18,7 +18,7 @@
             <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="single-footer-widget">
                     <div class="logo">
-                        <a href="#"><img class="w-25" src="assets/img/bimeh-iran-logo.png" alt="logo"></a>
+                        <a href="#"><img class="w-25" src="assets/img/logo/bimeh-iran-logo.png" alt="logo"></a>
                         <p>یک واقعیت طولانی مدت این است که محتوای قابل خواندن یک صفحه باعث می شود خواننده از تمرکز بر طرح کلی متن یا فرم پاراگراف های قرار داده شده در صفحه مورد نظر خود منحرف شود.</p>
                     </div>
 
@@ -75,7 +75,7 @@
         </div>
     </div>
 
-    <div class="map-image"><img src="assets/img/map.png" alt="map"></div>
+    <div class="map-image"><img src="assets/img/bg-map.png" alt="map"></div>
 </footer>
 <!-- End Footer Area -->
 

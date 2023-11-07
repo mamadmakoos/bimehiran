@@ -10,6 +10,13 @@
         .owl-nav {
             display: none !important;
         }
+        {{-- for seo --}}
+<META NAME="robots" CONTENT="noindex">
+        <meta name="robots" content="noindex">
+        <META NAME="robots" CONTENT="nofollow">
+        <meta name="robots" content="nofollow">
+        <META NAME="robots" CONTENT="noindex,nofollow">
+        <meta name="robots" content="noindex,nofollow">
     </style>
 @endsection
 @section("content")

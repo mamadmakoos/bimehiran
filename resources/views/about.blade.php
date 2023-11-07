@@ -7,13 +7,20 @@
             border-radius: 500px !important;
         }
     </style>
+    {{-- for seo --}}
+    <META NAME="robots" CONTENT="noindex">
+    <meta name="robots" content="noindex">
+    <META NAME="robots" CONTENT="nofollow">
+    <meta name="robots" content="nofollow">
+    <META NAME="robots" CONTENT="noindex,nofollow">
+    <meta name="robots" content="noindex,nofollow">
 @endsection
 @section("content")
 
     <br> <br> <br> <br>
 
     <!-- about us section 1 Start -->
-    <div class="container-fluid bg-light overflow-hidden px-lg-0 te" style="margin: 1rem 0;">
+    <div class="container-fluid bg-light overflow-hidden px-lg-0 te" id="about1">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="d-md-none col-lg-6 pe-lg-0" style="min-height: 400px;">

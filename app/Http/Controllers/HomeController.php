@@ -15,4 +15,7 @@ class HomeController extends Controller
     public  function weblog(){
         return view('weblog');
     }
+    public  function post(){
+        return view('single');
+    }
 }

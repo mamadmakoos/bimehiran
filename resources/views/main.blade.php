@@ -1,6 +1,13 @@
 @extends("layout.master")
 @section("meta")
     <title>ییمه ایران | نمایندگی عامری 5799</title>
+    {{-- for seo --}}
+    <META NAME="robots" CONTENT="noindex">
+    <meta name="robots" content="noindex">
+    <META NAME="robots" CONTENT="nofollow">
+    <meta name="robots" content="nofollow">
+    <META NAME="robots" CONTENT="noindex,nofollow">
+    <meta name="robots" content="noindex,nofollow">
 @endsection
 @section("content")
     <!-- Start Main Banner Area ( home section 1 ) -->

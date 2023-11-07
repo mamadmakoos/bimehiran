@@ -1,6 +1,14 @@
 <!doctype html >
 <html lang="fa" dir="rtl">
 <head>
+    {{-- for seo --}}
+    <META NAME="robots" CONTENT="noindex">
+    <meta name="robots" content="noindex">
+    <META NAME="robots" CONTENT="nofollow">
+    <meta name="robots" content="nofollow">
+    <META NAME="robots" CONTENT="noindex,nofollow">
+    <meta name="robots" content="noindex,nofollow">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,6 +29,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/rtl.css') }}">
+
     @yield("meta")
 </head>
 <body>
@@ -41,8 +50,8 @@
             <div class="Makoos-responsive-menu">
                 <div class="logo">
                     <a href="{{ route('home') }}">
-                        <img src="{{ asset('assets/img/bimeh-iran-logo.png') }}" alt="logo">
-                        <img src="{{ asset('assets/img/black-logo.png') }}" alt="logo">
+                        <img src="{{ asset('assets/img/logo/bimeh-iran-logo.png') }}" alt="logo">
+                        <img src="{{ asset('assets/img/logo/bl.png') }}" alt="logo">
                     </a>
                 </div>
             </div>
@@ -53,7 +62,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img style="width: 100px; height: 100px;" src="{{ asset('assets/img/bimeh-iran-logo.png') }}" alt="logo">
+                    <img style="width: 100px; height: 100px;" src="{{ asset('assets/img/logo/bimeh-iran-logo.png') }}" alt="logo">
                 </a>
 
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">

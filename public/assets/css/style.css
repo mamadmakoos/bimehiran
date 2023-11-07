@@ -1030,17 +1030,10 @@ p:last-child {
         background: #fff
     }
 
-    @media only screen and (max-width: 767px) {
-        .Makoos-responsive-nav .logo {
-            position: relative;
-            width: 45px !important;
-            height: 40px !important;
-            z-index: 999;
-            padding-right: 10px;
-        }
-    }
+
     .Makoos-responsive-nav .logo a img:nth-child(2) {
-        display: none
+        display: none;
+        height: 100%;
     }
 
     .Makoos-responsive-nav .others-options {
@@ -1439,7 +1432,7 @@ p:last-child {
 }
 
 .account-create-content .btn-primary::before {
-    background: linear-gradient(90deg, #0093dd 0%, #29166f 100%);
+    background: linear-gradient(90deg, #E77919 0%, #a0520d 100%);
 
 }
 
@@ -1610,6 +1603,7 @@ p:last-child {
     max-width: 40%
 }
 
+
 /*** Team ( about section ) style ***/
 #team {
     margin-top: 20px;
@@ -1732,6 +1726,20 @@ p:last-child {
 }
 
 @media (max-width: 768px) {
+
+        .Makoos-responsive-nav .logo {
+            position: relative;
+            width: 60px !important;
+            height: 30px !important;
+            z-index: 999;
+            padding-right: 10px;
+        }
+        .Makoos-responsive-nav .logo a img {
+
+            height: 100% !important;
+        }
+
+
     .blog-carousel .owl-nav {
         top: -70px;
         right: auto;
@@ -1757,16 +1765,26 @@ p:last-child {
     .feature-text  {
         padding-left: calc(((100% - 960px) / 2) + .75rem);
     }
+
+    #about1{
+        margin: 2rem 0 !important;
+    }
 }
 
 @media (min-width: 1200px) {
     .feature-text  {
         padding-left: calc(((100% - 1140px) / 2) + .75rem);
     }
+    #about1{
+        margin: 2rem 0 !important;
+    }
 }
 
 @media (min-width: 1400px) {
     .feature-text  {
         padding-left: calc(((100% - 1320px) / 2) + .75rem);
+    }
+    #about1{
+        margin: 2rem 0 !important;
     }
 }
