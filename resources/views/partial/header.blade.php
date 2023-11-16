@@ -44,7 +44,7 @@
 <!-- End Preloader -->
 
 <!-- Start Navbar Area -->
-<div class="navbar-area">
+<div class="navbar-area is-sticky ">
     <div class="Makoos-responsive-nav">
         <div class="container">
             <div class="Makoos-responsive-menu">
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <div class="Makoos-nav">
+    <div class="Makoos-nav" >
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{ route('home') }}">
@@ -67,15 +67,31 @@
 
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">صفحه اصلی</a></li>
-                        <li class="nav-item"><a href="{{ route('about_us') }}" class="nav-link">درباره ما</a></li>
-                        <li class="nav-item"><a href="{{ route('weblog') }}" class="nav-link">وبلاگ</a></li>
+                        <li class="nav-item"><a href="{{ route('home') }}" class="nav-link" style="font-size: {{ $setting['a_size']['value'] }} !important;">صفحه اصلی</a></li>
+                        <li class="nav-item"><a href="{{ route('about_us') }}" class="nav-link" style="font-size: {{ $setting['a_size']['value'] }} !important;">درباره ما</a></li>
+                        <li class="nav-item"><a href="{{ route('weblog') }}" class="nav-link" style="font-size: {{ $setting['a_size']['value'] }} !important;">وبلاگ</a></li>
 
                     </ul>
 
-                    <div class="others-options">
-                        <a href="#" class="login-btn"><i class="flaticon-user"></i> وارد شوید</a>
-                    </div>
+
+                        <div class="others-options">
+                            @auth()
+                                <li class="nav-item dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important;" >
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                        پروفایل
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item font-15" disabled>{{ Auth::user()->user_name }}</a></li>
+                                        <li><a class="dropdown-item font-15" href="{{ route('logout') }}">خروج</a></li>
+                                    </ul>
+                                </li>
+                            @endauth
+                            @guest()
+                            <form action="" method="post">
+                                <a class="login-btn" data-bs-toggle="modal" data-bs-target="#register-login"><i class="flaticon-user"></i> وارد شوید</a>
+                            </form>
+                            @endguest
+                        </div>
 
                 </div>
             </nav>

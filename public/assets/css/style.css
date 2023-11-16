@@ -1,6 +1,15 @@
 /* importing font */
 @import "Vazirmatn-RD-FD-font-face.css";
 
+/********** Template CSS **********/
+:root {
+    --primary: #29166F;
+    --secondary: #E77919;
+    --tertiary: #555555;
+    --light: #0093dd;
+    --dark: #011A41;
+}
+
 /* body style */
 body {
     padding: 0;
@@ -15,7 +24,7 @@ body {
 }
 /* custom back colors */
 .bg1 {
-    background-color: #29166F;
+    background-color: var(--primary);
 }
 
 .y-g-bg {
@@ -39,9 +48,9 @@ body {
 .blue-gradient {
     border-radius: 30px;
     padding: 20px;
-    background: #0093dd;
-    background: -webkit-radial-gradient(circle, #0093dd 0%, #29166f 100%);
-    background: radial-gradient(circle, #0093dd 0%, #29166f 100%);
+    background: var(--light);
+    background: -webkit-radial-gradient(circle, var(--light) 0%, var(--primary) 100%);
+    background: radial-gradient(circle, var(--light) 0%, var(--primary) 100%);
 }
 
 /* img style */
@@ -61,7 +70,7 @@ img {
 
 /* a style */
 a {
-    color: #E77919;
+    color: var(--secondary);
     text-decoration: none;
     -webkit-transition: .5s;
     transition: .5s;
@@ -69,7 +78,7 @@ a {
 }
 
 a:hover {
-    color: #29166F;
+    color: var(--primary);
     text-decoration: none
 }
 
@@ -98,12 +107,15 @@ button {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: Vazirmatn RD FD, sans-serif
 }
+.h5{
+    font-size: 1rem;
+}
 
 p {
 /*    text-align: justify !important;*/
     line-height: 1.7;
     margin-bottom: 15px;
-    color: #0093dd;
+    color: var(--light);
     font-weight: 300;
     font-size: 15px
 }
@@ -119,8 +131,8 @@ p:last-child {
     cursor: pointer;
     top: 50%;
     right: 15px;
-    background: -webkit-gradient(linear, left top, right top, from(#29166f), to(#0093dd));
-    background: linear-gradient(90deg, #29166f 0%, #0093dd 100%);
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--light)));
+    background: linear-gradient(90deg, var(--primary) 0%, var(--light) 100%);
     z-index: 4;
     width: 40px;
     text-align: center;
@@ -150,7 +162,7 @@ p:last-child {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(90deg, #0093dd 0%, #29166f 100%);
+    background: linear-gradient(90deg, var(--light) 0%, var(--primary) 100%);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .5s;
@@ -198,8 +210,8 @@ p:last-child {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: -webkit-gradient(linear, left top, right top, from(#29166f), to(#0093dd));
-    background: linear-gradient(90deg, #29166f 0%, #0093dd 100%);
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--light)));
+    background: linear-gradient(90deg, var(--primary) 0%, var(--light) 100%);
     border-radius: 4px;
     -webkit-transition: .5s;
     transition: .5s
@@ -213,8 +225,8 @@ p:last-child {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: -webkit-gradient(linear, left top, right top, from(#0093dd), to(#29166F));
-    background: linear-gradient(90deg, #0093dd 0%, #29166F 100%);
+    background: -webkit-gradient(linear, left top, right top, from(var(--light)), to(var(--primary)));
+    background: linear-gradient(90deg, var(--light) 0%, var(--primary) 100%);
     border-radius: 4px;
     -webkit-transition: .5s;
     transition: .5s;
@@ -273,7 +285,7 @@ p:last-child {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background: #0093dd;
+    background: var(--light);
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
     -webkit-animation-timing-function: linear;
@@ -297,7 +309,7 @@ p:last-child {
     padding: 0 15px;
     font-size: 15px;
     line-height: 50px;
-    color: #E77919;
+    color: var(--secondary);
     background-color: #fff;
     border: 1px solid #eee;
     border-radius: 0;
@@ -308,7 +320,7 @@ p:last-child {
 .form-control:focus {
     -webkit-box-shadow: unset !important;
     box-shadow: unset !important;
-    border-color: #29166F
+    border-color: var(--primary)
 }
 
 /* loader style */
@@ -317,8 +329,8 @@ p:last-child {
     width: 100%;
     height: 100%;
     z-index: 99999;
-    background: -webkit-gradient(linear, left top, right top, from(#29166f), to(#0093dd));
-    background: linear-gradient(90deg, #29166f 0%, #0093dd 100%);
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--light)));
+    background: linear-gradient(90deg, var(--primary) 0%, var(--light) 100%);
     top: 0;
     left: 0
 }
@@ -474,6 +486,9 @@ p:last-child {
     list-style-type: none;
     margin-bottom: 0
 }
+.nav-item{
+    list-style-type: none;
+}
 
 .Makoos-nav .navbar .navbar-nav {
     font-family: Vazirmatn RD FD, sans-serif;
@@ -507,7 +522,7 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item a:hover, .Makoos-nav .navbar .navbar-nav .nav-item a:focus, .Makoos-nav .navbar .navbar-nav .nav-item a.active {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item a i {
@@ -524,7 +539,7 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item:hover a, .Makoos-nav .navbar .navbar-nav .nav-item.active a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu {
@@ -560,13 +575,13 @@ p:last-child {
     text-transform: capitalize;
     padding: 8px 15px;
     margin: 0;
-    color: #E77919;
+    color: var(--secondary);
     font-size: 15.5px;
     font-weight: 500
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
@@ -577,11 +592,11 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -592,11 +607,11 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -607,11 +622,11 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -622,11 +637,11 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -637,11 +652,11 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -652,15 +667,15 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -670,7 +685,7 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -680,7 +695,7 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -690,7 +705,7 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -700,7 +715,7 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -710,7 +725,7 @@ p:last-child {
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
@@ -739,11 +754,11 @@ p:last-child {
 
 .Makoos-nav .navbar .others-options .login-btn i {
     margin-right: 2px;
-    color: #E77919
+    color: var(--secondary)
 }
 
 .Makoos-nav .navbar .others-options .login-btn:hover {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area {
@@ -783,107 +798,107 @@ p:last-child {
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item:hover a, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .others-options .login-btn {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .others-options .login-btn i {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.is-sticky .Makoos-nav .navbar .others-options .login-btn:hover {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .navbar-brand img {
@@ -891,107 +906,107 @@ p:last-child {
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item:hover a, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
-    color: #29166F
+    color: var(--primary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .others-options .login-btn {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .others-options .login-btn i {
-    color: #E77919
+    color: var(--secondary)
 }
 
 .navbar-area.navbar-style-two .Makoos-nav .others-options .login-btn:hover {
-    color: #29166F
+    color: var(--primary)
 }
 
 @media only screen and (max-width: 991px) {
@@ -1008,7 +1023,7 @@ p:last-child {
     }
 
     .Makoos-responsive-nav .Makoos-responsive-menu.mean-container .mean-nav ul li a.active {
-        color: #29166F
+        color: var(--primary)
     }
 
     .Makoos-responsive-nav .Makoos-responsive-menu.mean-container .mean-nav ul li li a {
@@ -1051,11 +1066,11 @@ p:last-child {
 
     .Makoos-responsive-nav .others-options .login-btn i {
         margin-right: 2px;
-        color: #E77919;
+        color: var(--secondary);
     }
 
     .Makoos-responsive-nav .others-options .login-btn:hover {
-        color: #29166F
+        color: var(--primary)
     }
 
     .navbar-area {
@@ -1071,11 +1086,11 @@ p:last-child {
     }
 
     .navbar-area.is-sticky .Makoos-responsive-nav .mean-container a.meanmenu-reveal {
-        color: #E77919
+        color: var(--secondary)
     }
 
     .navbar-area.is-sticky .Makoos-responsive-nav .mean-container a.meanmenu-reveal span {
-        background: #E77919
+        background: var(--secondary)
     }
 
     .navbar-area.is-sticky .Makoos-responsive-nav .logo a img:nth-child(1) {
@@ -1087,23 +1102,23 @@ p:last-child {
     }
 
     .navbar-area.is-sticky .Makoos-responsive-nav .others-options .login-btn {
-        color: #E77919
+        color: var(--secondary)
     }
 
     .navbar-area.is-sticky .Makoos-responsive-nav .others-options .login-btn i {
-        color: #29166F
+        color: var(--primary)
     }
 
     .navbar-area.is-sticky .Makoos-responsive-nav .others-options .login-btn:hover {
-        color: #29166F
+        color: var(--primary)
     }
 
     .navbar-area.navbar-style-two .Makoos-responsive-nav .mean-container a.meanmenu-reveal {
-        color: #E77919
+        color: var(--secondary)
     }
 
     .navbar-area.navbar-style-two .Makoos-responsive-nav .mean-container a.meanmenu-reveal span {
-        background: #E77919
+        background: var(--secondary)
     }
 
     .navbar-area.navbar-style-two .Makoos-responsive-nav .logo a img {
@@ -1111,15 +1126,15 @@ p:last-child {
     }
 
     .navbar-area.navbar-style-two .Makoos-responsive-nav .others-options .login-btn {
-        color: #E77919
+        color: var(--secondary)
     }
 
     .navbar-area.navbar-style-two .Makoos-responsive-nav .others-options .login-btn i {
-        color: #29166F
+        color: var(--primary)
     }
 
     .navbar-area.navbar-style-two .Makoos-responsive-nav .others-options .login-btn:hover {
-        color: #29166F
+        color: var(--primary)
     }
 
     .Makoos-nav {
@@ -1198,7 +1213,7 @@ p:last-child {
 .single-featured-box .icon {
     -webkit-transition: .4s;
     transition: .4s;
-    color: #29166F;
+    color: var(--primary);
     position: absolute;
     top: 40px;
     left: 50%;
@@ -1233,8 +1248,8 @@ p:last-child {
 }
 
 .single-featured-box .read-more-btn {
-    background: -webkit-gradient(linear, left top, right top, from(#29166f), to(#0093dd));
-    background: linear-gradient(90deg, #29166f 0%, #0093dd 100%);
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--light)));
+    background: linear-gradient(90deg, var(--primary) 0%, var(--light) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -1260,8 +1275,8 @@ p:last-child {
     -webkit-transition: .5s;
     transition: .5s;
     height: 1px;
-    background: -webkit-gradient(linear, left top, right top, from(#29166f), to(#0093dd));
-    background: linear-gradient(90deg, #29166f 0%, #0093dd 100%);
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--light)));
+    background: linear-gradient(90deg, var(--primary) 0%, var(--light) 100%);
 }
 
 .single-featured-box .read-more-btn:hover::before {
@@ -1340,7 +1355,7 @@ p:last-child {
 }
 
 .article-area .card .card-body h5 {
-    color: #E77919;
+    color: var(--secondary);
     text-decoration: none;
 }
 
@@ -1371,7 +1386,7 @@ p:last-child {
 }
 
 .insurance-boxes-area .container .insurance-boxes-inner .row .insurance-title h3 {
-    color: #E77919 !important;
+    color: var(--secondary) !important;
 
 }
 
@@ -1381,8 +1396,8 @@ p:last-child {
     margin-top: 30px;
     position: relative;
     z-index: 1;
-    background: -webkit-gradient(linear, left top, right top, from(#29166f), to(#0093dd));
-    background: linear-gradient(90deg, #29166f 0%, #0093dd 100%);
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--light)));
+    background: linear-gradient(90deg, var(--primary) 0%, var(--light) 100%);
     padding-top: 100px;
     padding-bottom: 100px
 }
@@ -1397,7 +1412,7 @@ p:last-child {
     opacity: .2;
     height: 100%;
     z-index: -1;
-    background-image: url(../../assets/img/bg_lines.svg);
+    /*background-image: url(../../assets/img/bg_lines.svg);*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200%
@@ -1432,7 +1447,7 @@ p:last-child {
 }
 
 .account-create-content .btn-primary::before {
-    background: linear-gradient(90deg, #E77919 0%, #a0520d 100%);
+    background: linear-gradient(90deg, var(--secondary) 0%, #a0520d 100%);
 
 }
 
@@ -1441,7 +1456,7 @@ p:last-child {
 }
 
 .account-create-content .btn-primary:hover, .account-create-content .btn-primary:focus {
-    color: #E77919 !important
+    color: var(--secondary) !important
 }
 
 
@@ -1486,13 +1501,13 @@ p:last-child {
 }
 
 .single-footer-widget .list li a {
-    color: #0093dd;
+    color: var(--light);
     display: inline-block
 }
 
 .single-footer-widget .list li a:hover {
     padding-left: 5px;
-    color: #29166F
+    color: var(--primary)
 }
 
 .single-footer-widget .list li:last-child {
@@ -1507,7 +1522,7 @@ p:last-child {
 
 .single-footer-widget .footer-contact-info li {
     position: relative;
-    color: #0093dd;
+    color: var(--light);
     margin-bottom: 8px;
     line-height: 1.7;
     font-weight: 400;
@@ -1515,12 +1530,12 @@ p:last-child {
 }
 
 .single-footer-widget .footer-contact-info li a {
-    color: #0093dd;
+    color: var(--light);
     display: inline-block
 }
 
 .single-footer-widget .footer-contact-info li a:hover {
-    color: #29166F
+    color: var(--primary)
 }
 
 .single-footer-widget .footer-contact-info li:last-child {
@@ -1551,15 +1566,15 @@ p:last-child {
     height: 30px;
     border: 1px solid #ece9e9;
     border-radius: 50%;
-    color: #29166F;
+    color: var(--primary);
     display: inline-block;
     font-size: 14px
 }
 
 .single-footer-widget .social-links li a:hover {
     color: #fff;
-    border-color: #29166F;
-    background-color: #29166F
+    border-color: var(--primary);
+    background-color: var(--primary)
 }
 
 /* ccount create area ( footer 3 ) style */
@@ -1578,12 +1593,12 @@ p:last-child {
 
 .copyright-area p a {
     display: inline-block;
-    color: #E77919;
+    color: var(--secondary);
     font-weight: 400
 }
 
 .copyright-area p a:hover {
-    color: #29166F
+    color: var(--primary)
 }
 
 .map-image {
@@ -1639,14 +1654,14 @@ p:last-child {
 
 .team-item .team-social li .btn {
     color: whitesmoke;
-    color: var(#E77919);
+    color: var(var(--secondary));
     border-radius: 40px;
     transition: .5s;
 }
 
 .team-item .team-social li .btn:hover {
-    color: #E77919;
-    background: #29166f;
+    color: var(--secondary);
+    background: var(--primary);
 }
 
 .team-item .team-social li:nth-child(1) {
@@ -1721,7 +1736,7 @@ p:last-child {
 
 .blog-carousel .owl-nav .owl-prev:hover,
 .blog-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
+    background: var(var(--primary));
     color: #FFFFFF;
 }
 
@@ -1788,3 +1803,63 @@ p:last-child {
         margin: 2rem 0 !important;
     }
 }
+
+
+
+h1,
+.h1,
+h2,
+.h2,
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+.h3,
+h4,
+.h4,
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+h5,
+.h5,
+h6,
+.h6,
+.fw-semi-bold {
+    font-weight: 500 !important;
+}
+/*** Callback ***/
+.callback {
+    position: relative;
+}
+
+.callback::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    z-index: -1;
+}
+
+/*** Service ***/
+.Appreciation .nav .nav-link {
+    transition: .5s;
+}
+
+.Appreciation .nav .nav-link.active {
+    border-color: var(var(--primary)) !important;
+    background: var(var(--primary));
+}
+
+.Appreciation .nav .nav-link.active h5 {
+    color: #FFFFFF !important;
+}
+
+.Appreciation .nav .nav-link.active h5 i {
+    color: #FFFFFF !important;
+}
+

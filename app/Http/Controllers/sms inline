@@ -1,0 +1,5 @@
+$username = 'kojabime';
+$password = 'mamadmakoos8585';
+$source = 'mamadmakoos8585';
+$destination = '09379585588,09123135739';
+https://panel.asanak.com/webservice/v1rest/sendsms?username=kojabime&password=mamadmakoos8585&source=982135868&destination=09379585588,09123135739&message=salam_azizam

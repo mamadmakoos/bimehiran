@@ -82,6 +82,26 @@
 {{-- go top button --}}
 <div class="go-top"><i class="fas fa-arrow-up"></i></div>
 
+{{-- start login register modal --}}
+<div class="modal fade" id="register-login">
+    <div class="modal-dialog"  role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">ورود - ثبت نام</h5>
+            </div>
+            <div class="modal-body" id="change-code">
+                <input type="tel" name="mobile" id="mobile" placeholder="شماره موبایل خود را وارد نمایید" class="text-center shadow-sm form-control">
+                <span id="result-login-register"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                <button type="button" id="send-login-register" class="btn btn-primary">تایید</button>
+            </div>
+        </div>
+    </div>
+</div>
+{{-- end login register modal --}}
+
 {{-- js scripts --}}
 <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 <script src="{{ asset('assets/js/popper.min.js') }}"></script>
@@ -98,5 +118,24 @@
 <script src="{{ asset('assets/js/form-validator.min.js') }}"></script>
 <script src="{{ asset('assets/js/contact-form-script.js') }}"></script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
+<script>
+    $("#send-login-register").on("click",function(){
+        mobile = $("#mobile").val();
+        if(mobile.length == 11){
+            $("#result-login-register").css("color","black").html("لطفا صبر کنید");
+            $.ajax({
+                url: "{{ route('login_register') }}",
+                cache: false,
+                type:"POST",
+                data: {"mobile":mobile,"_token":"{{ csrf_token() }}"},
+                success: function(result){
+                    $("#change-code").html(result);
+                }
+            });
+        }else{
+            $("#result-login-register").html("شماره موبایل باید 11 رقم باشد");
+        }
+    });
+</script>
 </body>
 </html>

@@ -8,6 +8,17 @@
     <meta name="robots" content="nofollow">
     <META NAME="robots" CONTENT="noindex,nofollow">
     <meta name="robots" content="noindex,nofollow">
+
+    <style>
+        /********** Template CSS **********/
+        :root {
+            --primary: #29166F;
+            --secondary: #E77919;
+            --tertiary: #555555;
+            --light: #0093dd;
+            --dark: #011A41;
+        }
+    </style>
 @endsection
 @section("content")
     <!-- Start Main Banner Area ( home section 1 ) -->
@@ -16,8 +27,8 @@
             <div class="d-table-cell">
                 <div class="container">
                     <div class="main-banner-content">
-                        <h1>خدمات بیمه ایران<br> شعبه 5799</h1>
-                        <p class="text-justify">شرکت بیمه ایران یکی از قدیمی ترین بیمه های ایران است که از سال ۱۳۱۴ شروع به کار نموده
+                        <h1 class="d-md-inline" style="color: var(--secondary) !important">کجا بیمه </h1>
+                        <h3 class="d-md-inline" style="color: white">خدمات بیمه ایران </h3>                        <p class="text-justify">شرکت بیمه ایران یکی از قدیمی ترین بیمه های ایران است که از سال ۱۳۱۴ شروع به کار نموده
                             است.</p>
                         <a href="#" class="btn btn-primary">اکنون شروع کنید</a>
                     </div>
@@ -39,7 +50,7 @@
                             </div>
 
                             <h3>بیمه بدنه</h3>
-                            <p class="text-justify">لورم ایپسوم متن ساختگی صنعتی با تولید نامفهوم در وب است.</p>
+                            <p class="text-justify">بیمه بدنه یکی از انواع پرطرفدار بیمه خودرو است. برخلاف بیمه شخص ثالث، خرید بیمه بدنه برای رانندگان اجباری نیست. بیمه بدنه با ارائه پوشش‌های مختلف و متنوع از صاحبان خودرو در برابر خسارات مالی وارده به خودرو پشتیبانی می‌کند.</p>
 
                             <a href="#" class="read-more-btn">بیشتر بخوانید</a>
                         </div>
@@ -51,8 +62,8 @@
                                 <img src="{{ asset('assets/img/icon-(7).png') }}" alt="">
                             </div>
 
-                            <h3>بیمه سرقت</h3>
-                            <p class="text-justify">لورم ایپسوم متن ساختگی صنعتی با تولید نامفهوم در وب است.</p>
+                            <h3>بیمه ثالث</h3>
+                            <p class="text-justify">خرید بیمه شخص ثالث برای تمام صاحبان وسایل نقلیه زمینی مثل موتور و ماشین اجباری است. این بیمه مانند یک سپر قوی و قابل اعتماد در کنار شماست. این بیمه خسارت تصادف هارا تا مبلغ بیمه نامه پوشش میدهد. </p>
 
                             <a href="#" class="read-more-btn">بیشتر بخوانید</a>
                         </div>
@@ -65,7 +76,7 @@
                             </div>
 
                             <h3>بیمه آتش سوزی</h3>
-                            <p class="text-justify">لورم ایپسوم متن ساختگی صنعتی با تولید نامفهوم در وب است.</p>
+                            <p class="text-justify">بیمه آتش سوزی به‌طور کلی خود ساختمان و کالاها و لوازم موجود در آن را در مقابل خطرات بیمه می‌کند. این بیمه  دو نوع خسارت را تحت پوشش قرار می‌دهد. ذکر این نکته لازم است که خسارت‌های جانی و بدنی تحت پوشش  قرار نمی‌گیرند.</p>
 
                             <a href="#" class="read-more-btn">بیشتر بخوانید</a>
                         </div>
@@ -77,8 +88,8 @@
                                 <img src="{{ asset('assets/img/icon-(5).png') }}" alt="">
                             </div>
 
-                            <h3>بیمه عمر</h3>
-                            <p class="text-justify">لورم ایپسوم متن ساختگی صنعتی با تولید نامفهوم در وب است.</p>
+                            <h3>بیمه حمل و نقل</h3>
+                            <p class="text-justify">کالایی که توسط اشخاص حقیقی یا حقوقی در داخل کشور از شهری به شهر دیگر جابجا می‌شوند، تحت عنوان بیمه‌های داخلی تحت پوشش بیمه قرار می‌گیرند. بیمه حمل و نقل کالا خسارت‌های احتمالی وارد بر کالاها یا بار را جبران می‌کند. </p>
 
                             <a href="#" class="read-more-btn">بیشتر بخوانید</a>
                         </div>
@@ -232,5 +243,4 @@
     <!-- start insurance Boxes Area ( home section 4 ) -->
 
 @endsection
-
 

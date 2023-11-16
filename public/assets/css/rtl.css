@@ -1,3 +1,12 @@
+/********** Template CSS **********/
+:root {
+    --primary: #29166F;
+    --secondary: #E77919;
+    --tertiary: #555555;
+    --light: #0093dd;
+    --dark: #011A41;
+}
+
 .Makoos-responsive-nav .others-options {
     right: 0;
     left: 52px;
@@ -114,12 +123,12 @@ ol, ul {
 }
 .features-box::before {
 
-    background: -webkit-gradient(linear, left top, right top, from(#29166f), to(#0093dd));
-    background: linear-gradient(90deg, #29166f 0%, #0093dd 100%);
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--light)));
+    background: linear-gradient(90deg, var(--primary) 0%, var(--light) 100%);
 }
 .btn-primary::before {
-    background: -webkit-gradient(linear, left top, right top, from(#29166f), to(#0093dd));
-    background: linear-gradient(90deg, #29166f 0%, #0093dd 100%);
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--light)));
+    background: linear-gradient(90deg, var(--primary) 0%, var(--light) 100%);
 }
 .single-footer-widget .list li a:hover {
     padding-right: 5px;
