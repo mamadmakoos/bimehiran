@@ -184,6 +184,13 @@
         margin: 0 !important;
         padding-top: 0 !important;
     }
+    .widget-area {
+        margin-top: 40px
+    }
+    .widget-area .widget .widget-title {
+        font-size: 19px
+    }
+
 }
 @media only screen and (min-width:576px) and (max-width:767px) {
     .featured-boxes-inner .col-lg-3 {

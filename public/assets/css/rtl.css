@@ -138,6 +138,17 @@ ol, ul {
     margin-left: 2px;
     margin-right: 0
 }
+.widget-area .widget_sidebar form button {
+    left: 0;
+    right: auto
+}
+.widget-area .widget .widget-title {
+    text-align: right
+}
+.widget-area .widget .widget-title::before {
+    right: 0;
+    left: auto
+}
 
 @media only screen and (max-width:767px) {
     .Makoos-responsive-nav .logo {
@@ -210,3 +221,4 @@ ol, ul {
         font-size: 16px
     }
 }
+

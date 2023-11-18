@@ -1,8 +1,5 @@
 /* importing font */
 @import "Vazirmatn-RD-FD-font-face.css";
-.nav-item{
-    list-style-type: none !important;
-}
 
 /********** Template CSS **********/
 :root {
@@ -11,6 +8,7 @@
     --tertiary: #555555;
     --light: #0093dd;
     --dark: #011A41;
+    --white: white;
 }
 
 /* body style */
@@ -489,7 +487,9 @@ p:last-child {
     list-style-type: none;
     margin-bottom: 0
 }
-
+.nav-item{
+    list-style-type: none;
+}
 
 .Makoos-nav .navbar .navbar-nav {
     font-family: Vazirmatn RD FD, sans-serif;
@@ -585,12 +585,12 @@ p:last-child {
     color: var(--primary)
 }
 
-/*.Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+.Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
     left: -250px;
     top: 0;
     opacity: 0;
     visibility: hidden
-}*/
+}
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
     color: var(--secondary)
@@ -1830,6 +1830,7 @@ h6,
 .fw-semi-bold {
     font-weight: 500 !important;
 }
+
 /*** Callback ***/
 .callback {
     position: relative;
@@ -1864,3 +1865,52 @@ h6,
     color: #FFFFFF !important;
 }
 
+/* Widget area */
+.widget-area .widget {
+    margin-top: 30px;
+
+}
+.widget-area .widget:first-child {
+    margin-top: 0;
+    border-radius: 20px;
+}
+.widget-area .widget .widget-title {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    position: relative;
+    font-weight: 600;
+    font-size: 21px
+}
+.widget-area .widget .widget-title::before {
+    content: '';
+    position: absolute;
+    background: -webkit-gradient(linear, left top, right top, from(#ee0979), to(#ff6a00));
+    background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+    bottom: -1px;
+    left: 0;
+    width: 50px;
+    height: 1px
+}
+.widget-area .widget_sidebar {
+    -webkit-box-shadow: 0 0 29px 0 rgba(102, 102, 102, .1);
+    box-shadow: 0 0 29px 0 rgba(102, 102, 102, .1);
+    background-color: #fff;
+    padding: 15px;
+
+}
+.sidebar-list-group li{
+margin: 1px;
+}
+.sidebar-list-group  .active{
+    background-color: var(--dark) !important;
+    border-radius: 13px 13px 0px 13px !important;
+}
+.sidebar-list-group li:hover{
+    background-color: var(--dark);
+    border-radius: 13px 13px 0px 13px;
+}
+.sidebar-list-group li a:hover{
+    color: var(--white);
+}
