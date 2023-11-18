@@ -93,10 +93,7 @@
                 <input type="tel" name="mobile" id="mobile" placeholder="شماره موبایل خود را وارد نمایید" class="text-center shadow-sm form-control">
                 <span id="result-login-register"></span>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
-                <button type="button" id="send-login-register" class="btn btn-primary">تایید</button>
-            </div>
+
         </div>
     </div>
 </div>
@@ -119,6 +116,22 @@
 <script src="{{ asset('assets/js/contact-form-script.js') }}"></script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
 <script>
+    $("#mobile").on("keyup",function(){
+        mobile = $("#mobile").val();
+        if(mobile.length == 11){
+            $.ajax({
+                url: "{{ route('login_register') }}",
+                cache: false,
+                type:"POST",
+                data: {"mobile":mobile,"_token":"{{ csrf_token() }}"},
+                success: function(result){
+                    $("#change-code").html(result);
+                }
+            });
+        }
+    });
+</script>
+<script>
     $("#send-login-register").on("click",function(){
         mobile = $("#mobile").val();
         if(mobile.length == 11){
@@ -136,6 +149,7 @@
             $("#result-login-register").html("شماره موبایل باید 11 رقم باشد");
         }
     });
+
 </script>
 </body>
 </html>

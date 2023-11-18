@@ -29,7 +29,18 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/rtl.css') }}">
+    <style>
+        /********** Template CSS **********/
+        :root {
+            --primary: #29166F;
+            --secondary: #E77919;
+            --tertiary: #555555;
+            --light: #0093dd;
+            --dark: #011A41;
+            --white: white;
+        }
 
+    </style>
     @yield("meta")
 </head>
 <body>
@@ -67,24 +78,29 @@
 
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="{{ route('home') }}" class="nav-link" style="font-size: {{ $setting['a_size']['value'] }} !important;">صفحه اصلی</a></li>
-                        <li class="nav-item"><a href="{{ route('about_us') }}" class="nav-link" style="font-size: {{ $setting['a_size']['value'] }} !important;">درباره ما</a></li>
-                        <li class="nav-item"><a href="{{ route('weblog') }}" class="nav-link" style="font-size: {{ $setting['a_size']['value'] }} !important;">وبلاگ</a></li>
+                        <li class="nav-item"><a href="{{ route('home') }}" class="nav-link " style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">صفحه اصلی</a></li>
+                        <li class="nav-item"><a href="{{ route('about_us') }}" class="nav-link " style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">درباره ما</a></li>
+                        <li class="nav-item"><a href="{{ route('weblog') }}" class="nav-link " style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">وبلاگ</a></li>
+                        @auth()
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">
+                                    {{ Auth::user()->user_name }}
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item @endiffont-15" href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">پروفایل</a></li>
+                                    <li><a class="dropdown-item @endiffont-15" href="{{ route('logout') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">خروج</a></li>
+                                </ul>
+                            </li>
+                        @endauth
 
                     </ul>
 
 
                         <div class="others-options">
                             @auth()
-                                <li class="nav-item dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important;" >
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                    <a class="nav-link " href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">
                                         پروفایل
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item font-15" disabled>{{ Auth::user()->user_name }}</a></li>
-                                        <li><a class="dropdown-item font-15" href="{{ route('logout') }}">خروج</a></li>
-                                    </ul>
-                                </li>
                             @endauth
                             @guest()
                             <form action="" method="post">

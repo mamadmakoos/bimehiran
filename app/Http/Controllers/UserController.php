@@ -41,7 +41,6 @@ class UserController extends Controller
                     "updated_at" => Carbon::now(),
                 ]);
                 Auth::loginUsingId($checkMobile->id, true);
-                return 1;
             }
             // do login
             Auth::loginUsingId($checkMobile->id, true);
@@ -49,6 +48,7 @@ class UserController extends Controller
         } else {
             return 0;
         }
+
     }
 
     public function logout()

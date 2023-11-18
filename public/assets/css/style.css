@@ -1,5 +1,8 @@
 /* importing font */
 @import "Vazirmatn-RD-FD-font-face.css";
+.nav-item{
+    list-style-type: none !important;
+}
 
 /********** Template CSS **********/
 :root {
@@ -486,9 +489,7 @@ p:last-child {
     list-style-type: none;
     margin-bottom: 0
 }
-.nav-item{
-    list-style-type: none;
-}
+
 
 .Makoos-nav .navbar .navbar-nav {
     font-family: Vazirmatn RD FD, sans-serif;
@@ -584,12 +585,12 @@ p:last-child {
     color: var(--primary)
 }
 
-.Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+/*.Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
     left: -250px;
     top: 0;
     opacity: 0;
     visibility: hidden
-}
+}*/
 
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
     color: var(--secondary)

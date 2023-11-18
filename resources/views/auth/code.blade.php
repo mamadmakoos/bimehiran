@@ -1,4 +1,6 @@
 <input type="tel" name="code" id="code" autocomplete="off" placeholder="کد ارسال شده به موبایل خود را وارد نمایید" class="text-center form-control">
+<span id="">لطفا بعد از وارد کردن کد "اینتر" بزنید</span>
+<br>
 <span id="result-code"></span>
 
 <script>
