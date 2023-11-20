@@ -14,11 +14,8 @@ class Controller extends BaseController
         $password = 'mamadmakoos8585';
         $source = '982135868';
         $destination = $mobile;
-        $token = "e8a5e8e86e210cc3614b778c492fe3cb92a8c690e9e5f05414d8e4d945b704d3";
+        //$token = "e8a5e8e86e210cc3614b778c492fe3cb92a8c690e9e5f05414d8e4d945b704d3";
         $url="https://panel.asanak.com/webservice/v1rest/sendsms";
-        $code= 'koja'.rand(100000,999999).'bime' ;
-        $message=" سلام خوش آمدید کد شما$code میباشد ";
-        $message= $body;
         $curl = curl_init();
         curl_setopt_array($curl, array(
             CURLOPT_URL => "https://panel.asanak.com/webservice/v1rest/sendsms",
@@ -31,12 +28,13 @@ class Controller extends BaseController
                 'username' => $username,
                 'password' => $password,
                 'Source' => $source,
-                'Message' => $message,
+                'Message' => $body,
                 'destination' => $destination
             ),
         ));
 
         $response = curl_exec($curl);
         curl_close($curl);
+
     }
 }

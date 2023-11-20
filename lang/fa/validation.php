@@ -190,6 +190,7 @@ return [
         'melli_code' => 'کد ملی',
         'postal_code' => 'کد پستی',
         'address' => 'آدرس',
+        'amount' => 'مبلغ',
     ],
 
 ];

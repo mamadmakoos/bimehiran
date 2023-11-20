@@ -88,7 +88,7 @@
                                 <img src="{{ asset('assets/img/icon-(5).png') }}" alt="">
                             </div>
 
-                            <h3>بیمه حمل و نقل</h3>
+                            <h3>بیمه عمر و مزایا</h3>
                             <p class="text-justify">کالایی که توسط اشخاص حقیقی یا حقوقی در داخل کشور از شهری به شهر دیگر جابجا می‌شوند، تحت عنوان بیمه‌های داخلی تحت پوشش بیمه قرار می‌گیرند. بیمه حمل و نقل کالا خسارت‌های احتمالی وارد بر کالاها یا بار را جبران می‌کند. </p>
 
                             <a href="#" class="read-more-btn">بیشتر بخوانید</a>
@@ -100,87 +100,6 @@
     </section>
     <!-- End Featured Boxes Area ( home section 2 ) -->
 
-
-    <!-- start articles Area ( home section 3 ) -->
-    <section class="article-area mt-md-5 mt-3">
-        <div class="container">
-            <h2 class="text-center">آخرین مقالات</h2>
-            <hr>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                    <div class="card blue-gradient h-100">
-                        <img src="{{ asset('assets/img/blog-image/1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">مقاله اول سایت</h5>
-                            <p class="text-justify card-text">وقتی ثروت‌ های بزرگ به دست برخی مردم می‌افتد در پرتو آن نیرومند می‌شوند
-                                و در سایهٔ نیرومندی و ثروت خیال می‌ کنند که می‌توانند در خارج از وطن خود زندگی
-                                نمایند!</p>
-                            <div class="article-link text-center">
-                                <a href="#">ادامه مطلب</a>
-                            </div>
-                        </div>
-                        <div class="card-footer ">
-                            <small class="text-white"> مقاله 4 دقیقه پیش ویرایش شده</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card blue-gradient h-100">
-                        <img src="{{ asset('assets/img/blog-image/2.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">مقاله دوم سایت</h5>
-                            <p class="text-justify card-text">وقتی ثروت‌ های بزرگ به دست برخی مردم می‌افتد در پرتو آن نیرومند می‌شوند
-                                و در سایهٔ نیرومندی و ثروت خیال می‌ کنند که می‌توانند در خارج از وطن خود زندگی
-                                نمایند!</p>
-                            <div class="article-link text-center">
-                                <a href="#">ادامه مطلب</a>
-                            </div>
-                        </div>
-                        <div class="card-footer ">
-                            <small class="text-white"> مقاله 10 دقیقه پیش ویرایش شده</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card blue-gradient h-100">
-                        <img src="{{ asset('assets/img/blog-image/3.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">مقاله سوم سایت</h5>
-                            <p class="text-justify card-text">وقتی ثروت‌ های بزرگ به دست برخی مردم می‌افتد در پرتو آن نیرومند می‌شوند
-                                و در سایهٔ نیرومندی و ثروت خیال می‌ کنند که می‌توانند در خارج از وطن خود زندگی
-                                نمایند!</p>
-                            <div class="article-link text-center">
-                                <a href="#">ادامه مطلب</a>
-                            </div>
-                        </div>
-                        <div class="card-footer ">
-                            <small class="text-white"> مقاله 25 دقیقه پیش ویرایش شده</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card blue-gradient h-100">
-                        <img src="{{ asset('assets/img/blog-image/4.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">مقاله چهارم سایت</h5>
-                            <p class="text-justify card-text">وقتی ثروت‌ های بزرگ به دست برخی مردم می‌افتد در پرتو آن نیرومند می‌شوند
-                                و در سایهٔ نیرومندی و ثروت خیال می‌ کنند که می‌توانند در خارج از وطن خود زندگی
-                                نمایند!</p>
-                            <div class="article-link text-center">
-                                <a href="#">ادامه مطلب</a>
-                            </div>
-                        </div>
-                        <div class="card-footer ">
-                            <small class="text-white"> مقاله 40 دقیقه پیش ویرایش شده</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- start articles Area ( home section 3 ) -->
-
     <!-- start insurance Boxes Area ( home section 4 ) -->
     <section class="insurance-boxes-area mt-5">
         <div class="container">
@@ -191,10 +110,14 @@
                     </div>
                     <div class="insurance-title col-sm-12 col-md-6 mtb-50 rounded  shadow">
                         <h3 class="pt-3 mt-2">
-                            بیمه بدنه و مزایا
+                            بیمه مسئولیت حمل و نقل متصدیان حمل و نقل
                         </h3>
                         <p class="text-justify insurance-desc p-5">
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                            بیمه حمل و نقل  به دو نوع بیمه باربری و بیمه مسئولیت متصدیان حمل و نقل تقسیم  می‌گردد.
+                            شرکت‌ها و موسسات حمل و نقل طبق قانون تجارت، کالاهایی را که حمل می‌کنند تحت پوشش قرارداد مسئولیت متصدیان حمل و نقل داخلی بیمه می نمایند و چنانچه کالاهای حمل شده دچار حادثه و خسارت گردد شرکت بیمه با توجه به قرارداد(از بارگیری تا تخلیه)، خسارت‌های وارده به ذینفع را در سریعترین زمان ممکن جبران می‌نماید.
+                            این نمایندگی با توجه به سابقه طولانی همکاری با شرکت‌های حمل و نقل ،بهترین و جامع‌ترین قراردادهای حال حاضر در ایران را ارائه داده تا متصدیان و مدیران شرکت‌ها و موسسات حمل و نقل با آرامش خیال محموله را به مقاصد‌ مختلف حمل نمایند.
+
+
                         </p>
                     </div>
                     <div class="insurance-photo d-md-none col-sm-12 col-md-6 mtb-70 ">
@@ -241,6 +164,33 @@
         </div>
     </section>
     <!-- start insurance Boxes Area ( home section 4 ) -->
+
+    <!-- start articles Area ( home section 3 ) -->
+    <section class="article-area mt-md-5 mt-3">
+        <div class="container">
+            <h2 class="text-center">آخرین دسته بندی ها</h2>
+            <hr>
+
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                @foreach($categories as $category)
+                    <div class="col">
+                        <div class="card blue-gradient h-100">
+                            <img src="{{ asset($category->image) }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: 25px">{{ $category->title }}</h5>
+                                <div class="article-link text-center">
+                                    <hr>
+                                    <a href="{{ $category->slug }}" class="text-center text-white" style="font-size: 15px">ادامه مطلب</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+
+        </div>
+    </section>
+    <!-- start articles Area ( home section 3 ) -->
 
 @endsection
 

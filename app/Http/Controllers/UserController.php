@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Profile;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -16,11 +18,15 @@ class UserController extends Controller
         $mobile = $request->mobile;
         $checkMobile = User::where("mobile", $mobile)->exists();
         if ($checkMobile) {
-            $code = "12345";
+            $token = rand(10000,99999);
+            self::sendSms($mobile,"رمز موقت شما $token میباشد");
+            Session::put("user_".$mobile,$token);
             return view("auth.code", ["mobile" => $mobile]);
         }
         else {
-            $code = "12345";
+            $token = rand(10000,99999);
+            self::sendSms($mobile,"رمز موقت شما $token میباشد");
+            Session::put("user_".$mobile,$token);
             return view("auth.code", ["mobile" => $mobile]);
         }
     }
@@ -29,14 +35,20 @@ class UserController extends Controller
     {
         $code = $request->code;
         $mobile = $request->mobile;
-        if ($code == "12345") {
-            $checkMobile = User::where("mobile", $mobile)->first();
+        if($code == Session::get("user_".$mobile)){
+            $checkMobile = User::where("mobile",$mobile)->first();
             if (!isset($checkMobile)) {
                 // do register
-                User::create([
+                $user = User::create([
                     "mobile" => $mobile,
                     "user_name" => $mobile,
                     "password" => Hash::make($mobile),
+                    "created_at" => Carbon::now(),
+                    "updated_at" => Carbon::now(),
+                ]);
+                Profile::create([
+                    "user_id" => $user->id,
+                    "phone" => "$mobile",
                     "created_at" => Carbon::now(),
                     "updated_at" => Carbon::now(),
                 ]);

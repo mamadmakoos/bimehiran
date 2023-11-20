@@ -88,6 +88,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item @endiffont-15" href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">پروفایل</a></li>
+                                    <li><a class="dropdown-item @endiffont-15" href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">اعتبار {{ $credit }} تومان </a></li>
                                     <li><a class="dropdown-item @endiffont-15" href="{{ route('logout') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">خروج</a></li>
                                 </ul>
                             </li>

@@ -4,6 +4,11 @@
          پروفایل کاربری
      </a>
     </li>
+    <li class="list-group-item @if($menu == 'credit') active @endif fw-bold">
+        <a href="{{ route('user_credit') }}">
+            افزایش اعتبار
+        </a>
+    </li>
     <li class="list-group-item @if($menu == 'password') active @endif fw-bold">
         <a href="{{ route('user_password') }}">
             تغییر رمز عبور

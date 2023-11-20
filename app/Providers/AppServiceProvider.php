@@ -8,6 +8,7 @@ use Illuminate\View\View;
 use App\Models\Category;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades;
+use Illuminate\Support\Facades\Auth;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -27,5 +28,14 @@ class AppServiceProvider extends ServiceProvider
             $setting = Setting::all()->keyBy("key");
             $view->with('setting', $setting);
         });
+
+
+            Facades\View::composer('*', function (View $view) {
+                if ( Facades\Auth::check()){
+                $credit = Auth::user()->credit;
+                $view->with('credit', $credit);
+                }
+            });
+
     }
 }
