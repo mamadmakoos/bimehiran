@@ -34,14 +34,9 @@
                         <div class="section-title">
                             <h1 class="display-5 mb-4">نمایندگی عامری</h1>
                         </div>
-                        <p class="text-justify mb-4 pb-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                            طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
-                            شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-                            کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا
-                            با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو
-                            در زبان فارسی ایجاد کرد در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-                            راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و
-                            جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                        <p class="text-justify mb-4 pb-2">نمایندگی عامری کد 5799 در سال 1384 تاسیس گردید و بیش از 15 سال است که مشغول به خدمات رسانی به ملت شریف ایران مخصوصا صاحبان کالا می باشد.
+                            آقای عامری ابتدا به عنوان مدیر یکی از شرکت های حمل و نقل استان تهران شروع به کار نمود و پس از چند سال نسبت به فعالیت در بیمه ایران اقدام نمودند که تجربه ایشان در امور حمل کالا موجب گردید یکی از نماینده های برتر شرکت سهامی بیمه ایران در رشته بیمه های مسئولیت حمل و نقل متصدیان داخلی و بیمه های باربری وارداتی و صادراتی باشند و رضایت 95% صاحبان کالا و متصدیان را جلب نمایند.
+                        </p>
                         <div class="row g-4">
                             <div class="col-6">
                                 <div class="d-flex align-items-center">
@@ -272,59 +267,102 @@
     </div>
     <!-- Appreciation End -->
 
+    <!-- start contact us Area ( contact section 4 ) -->
+    <section class="contact-area ptb-70">
+        <div class="container">
+            <div class="section-title">
+                <h3>تماس با ما</h3>
+                <div class="bar"></div>
+                <p> هرگونه سوال را با ما درمیان بگذارید</p>
+            </div>
 
-{{--    <!-- Callback Start -->
-    <div class="container-fluid callback mt-5 py-5">
-        <div class="container pt-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                            <p class="text-justify d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Get In Touch
-                            </p>
-                            <h1 class="display-5 mb-5">Request A Call-Back</h1>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <div class="contact-info">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <span>آدرس</span>
+                                اتوبان شهید محلاتی - نرسیده به مخبر شمالی - ساختمان شیشه ای یاران - پلاک 397 - طبقه سوم
+                            </li>
+
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <span>پست الکترونیک</span>
+                                <a href="#">support@kojabime.com</a>
+                            </li>
+
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-phone-volume"></i>
+                                </div>
+                                <span>تلفن</span>
+                                <a href="tel:02135868">021-35868</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-12">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" id="name" class="form-control" required data-error="لطفا نام خود را وارد کنید" placeholder="لطفا نام خود را وارد کنید">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" class="form-control" required data-error="لطفا آدرس ایمیل خود را وارد کنید" placeholder="پست الکترونیک">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="phone_number" id="phone_number" required data-error="لطفا شماره خود را وارد کنید" class="form-control" placeholder="تلفن">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="لطفا موضوع خود را وارد کنید" placeholder="موضوع">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="6" required data-error="پیام خود را تایپ کنید" placeholder="پیام شما"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12">
+                                    <button type="submit" class="btn btn-primary">ارسال پیام</button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="mail" placeholder="Your Email">
-                                    <label for="mail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                    <label for="mobile">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Callback End -->--}}
+
+        <div class="bg-map"><img src="assets/img/bg-map.png" alt="image"></div>
+    </section>
+    <!-- end contact us Area ( contact section 4 ) -->
+
 
 @endsection
 

@@ -32,7 +32,7 @@ if (empty($_POST["message"])) {
 }
 
 //Add your email here
-$EmailTo = "hello@example.com";
+$EmailTo = "kojabime@gmail.com";
 $Subject = "پیام جدید دریافت شد";
 
 // prepare email body text

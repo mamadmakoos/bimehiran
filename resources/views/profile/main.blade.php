@@ -56,50 +56,55 @@
                                 <div class="col-12 col-lg-4">
                                     <div class="mb-4">
                                         <label>موبایل</label>
-                                        <input class="form-control" type="text" name="mobile" disabled value="@if(Auth::user()->mobile != null) {{ Auth::user()->mobile }} @endif">
+                                        <input class="form-control" type="text" name="mobile" disabled value="@if($user->mobile != null) {{ Auth::user()->mobile }} @endif">
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
                                     <div class="mb-4">
                                         <label>نام کاربری</label>
-                                        <input class="form-control" type="text" name="user_name" value=" {{ $result->user_name ?? 'هنوز پر نشده' }}">
+                                        <input class="form-control" type="text" name="user_name" value=" {{ $result->user_name ?? '' }}">
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
 
                                     <div class="mb-4">
                                         <label>نام</label>
-                                        <input class="form-control" type="text" id="fname" name="fname" value=" {{ $result->profile->fname ?? 'خالی'}}">
+                                        <input class="form-control" type="text" id="fname" name="fname" value=" {{ $profile->fname ?? ''}}">
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
                                     <div class="mb-4">
                                         <label>نام خانوادگی</label>
-                                        <input class="form-control" type="text" id="lname" name="lname" value="{{ $result->profile->lname ?? 'خالی'}}">
+                                        <input class="form-control" type="text" id="lname" name="lname" value="{{$profile->lname ?? ''}}">
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
                                     <div class="mb-4">
                                         <label>کد ملی</label>
-                                        <input class="form-control" type="text" id="melli_code" name="melli_code" value="{{ $result->profile->melli_code ?? 'هنوز پر نشده'}}">
+                                        <input class="form-control" type="text" id="melli_code" name="melli_code" value="{{ $profile->melli_code ?? ''}}">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="mb-4">
+
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6">
                                     <div class="mb-4">
                                         <label>تلفن</label>
-                                        <input class="form-control" type="tel" name="phone" value="{{ $result->profile->phone ?? 'هنوز پر نشده'}}">
+                                        <input class="form-control" type="tel" name="phone" value="{{ $profile->phone ?? ''}}">
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6">
                                     <div class="mb-4">
                                         <label>کد پستی</label>
-                                        <input class="form-control" type="tel" name="postal_code" value="{{ $result->profile->postal_code ?? 'هنوز پر نشده'}}">
+                                        <input class="form-control" type="tel" name="postal_code" value="{{ $profile->postal_code ?? ''}}">
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-12">
                                     <div class="mb-4">
                                         <label>آدرس</label>
-                                        <textarea class="form-control" id="address" name="address" rows="6">{{ $result->profile->address ?? 'هنوز پر نشده'}}</textarea>
+                                        <textarea class="form-control" id="address" name="address" rows="6">{{ $profile->address ?? ''}}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +128,9 @@
 
 
 @endsection
+@section("scr")
 
+@endsection
 
 
 

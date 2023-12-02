@@ -9,12 +9,16 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
 {
     public function index(Request $request)
     {
 
+        Validator::make($request->all(), [
+            'mobile' =>  'required|regex:/(09)[0-9]{9}/|digits:11|numeric',
+        ])->validate();
         $mobile = $request->mobile;
         $checkMobile = User::where("mobile", $mobile)->exists();
         if ($checkMobile) {

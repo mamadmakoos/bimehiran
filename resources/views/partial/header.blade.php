@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/odometer.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/@majidh1/jalalidatepicker/dist/jalalidatepicker.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/rtl.css') }}">
@@ -73,23 +74,23 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img style="width: 100px; height: 100px;" src="{{ asset('assets/img/logo/bimeh-iran-logo.png') }}" alt="logo">
+                    <img style="width: 50px; height: 50px;" src="{{ asset('assets/img/logo/bimeh-iran-logo.png') }}" alt="logo">
                 </a>
 
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="{{ route('home') }}" class="nav-link " style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">صفحه اصلی</a></li>
-                        <li class="nav-item"><a href="{{ route('about_us') }}" class="nav-link " style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">درباره ما</a></li>
-                        <li class="nav-item"><a href="{{ route('weblog') }}" class="nav-link " style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">وبلاگ</a></li>
+                        <li class="nav-item"><a href="{{ route('home') }}" class="nav-link p-0 " style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">صفحه اصلی</a></li>
+                        <li class="nav-item"><a href="{{ route('about_us') }}" class="nav-link p-0 " style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">درباره ما</a></li>
+                        <li class="nav-item"><a href="{{ route('weblog') }}" class="nav-link p-0 " style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">وبلاگ</a></li>
                         @auth()
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">
+                                <a class="nav-link p-0  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">
                                     {{ Auth::user()->user_name }}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item @endiffont-15" href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">پروفایل</a></li>
-                                    <li><a class="dropdown-item @endiffont-15" href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">اعتبار {{ $credit }} تومان </a></li>
-                                    <li><a class="dropdown-item @endiffont-15" href="{{ route('logout') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">خروج</a></li>
+                                    <li><a class="dropdown-item @endiffont-15" href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">پروفایل</a></li>
+                                    <li><a class="dropdown-item @endiffont-15" href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">اعتبار {{ $credit }} تومان </a></li>
+                                    <li><a class="dropdown-item @endiffont-15" href="{{ route('logout') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">خروج</a></li>
                                 </ul>
                             </li>
                         @endauth
@@ -99,7 +100,7 @@
 
                         <div class="others-options">
                             @auth()
-                                    <a class="nav-link " href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">
+                                    <a class="nav-link p-0 " href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif">
                                         پروفایل
                                     </a>
                             @endauth

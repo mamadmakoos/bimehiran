@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use App\Models\Profile;
 use App\Models\Setting;
+use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\View;
 use App\Models\Category;
@@ -36,6 +39,18 @@ class AppServiceProvider extends ServiceProvider
                 $view->with('credit', $credit);
                 }
             });
+        Facades\View::composer('*', function (View $view) {
+            if ( Facades\Auth::check()){
+                $user =User::where("id",Auth::id())->first();
+                $view->with('user', $user);
+            }
+        });
+        Facades\View::composer('*', function (View $view) {
+            if ( Facades\Auth::check()){
+                $profile =Profile::where("user_id",Auth::id())->first();
+                $view->with('profile', $profile);
+            }
+        });
 
     }
 }

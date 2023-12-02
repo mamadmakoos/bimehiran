@@ -23,14 +23,14 @@
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, span, p, li, a {
     letter-spacing: 0px !important;
-    font-family: "Vazirmatn RD FD", sans-serif;
+    font-family: "Kalameh web", sans-serif;
 }
-.odometer.odometer-auto-theme,.odometer.odometer-theme-default{direction: ltr;font-family: "Vazirmatn RD FD", sans-serif;}
+.odometer.odometer-auto-theme,.odometer.odometer-theme-default{direction: ltr;font-family: "Kalameh web", sans-serif;}
 #timer {
     direction: ltr;
 }
 button, input, optgroup, select, textarea {
-    font-family: "Vazirmatn RD FD", sans-serif;
+    font-family: "Kalameh web", sans-serif;
 }
 ol, ul {
     padding-left: 0;
@@ -149,6 +149,28 @@ ol, ul {
     right: 0;
     left: auto
 }
+.contact-form {
+    text-align: right
+}
+.contact-form form #msgSubmit {
+    margin-bottom: 0!important;
+    text-align: right!important
+}
+.contact-form form .help-block ul {
+    padding-right: 0
+}
+.contact-info ul li {
+    padding-right: 95px;
+    padding-left: 0;
+    text-align: right
+}
+.contact-info ul li .icon {
+    right: 0;
+    left: auto
+}
+.contact-info ul {
+    padding-right: 0
+}
 
 @media only screen and (max-width:767px) {
     .Makoos-responsive-nav .logo {
@@ -183,6 +205,14 @@ ol, ul {
     .mean-container .mean-nav ul li a {
         float: right;
         text-align: right
+    }
+    .contact-info ul li {
+        padding-right: 87px!important;
+        padding-left: 0!important
+    }
+    .contact-info {
+        padding-left: 25px!important;
+        padding-right: 0!important
     }
 }
 @media only screen and (min-width:768px) and (max-width:991px) {

@@ -138,7 +138,7 @@ class ProfileController extends Controller
         if(isset($user) && $user->status == "PENDING" && $status == "10"){
 
 //            Payments::where("token",$token)->where("amount",$amount)->update(
-            Payments::where("token",$token)->where("amount",$amount)->update(
+            Payments::where("token",$token)->update(
                 [
                 "status" => "UNVERIFY",
                 "response_before" => json_encode($all)
@@ -166,7 +166,7 @@ class ProfileController extends Controller
 
             if(isset($result) && $result['status'] == "100"){
                 // motmaene motmaen pardakht anjam shode
-                Payments::where("token",$token)->where("amount",$amount)->update([
+                Payments::where("token",$token)->update([
                     "status" => "SUCCESS",
                     "response_after" => json_encode($result)
                 ]);

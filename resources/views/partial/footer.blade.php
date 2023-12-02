@@ -81,6 +81,8 @@
 
 {{-- go top button --}}
 <div class="go-top"><i class="fas fa-arrow-up"></i></div>
+{{-- tel  button --}}
+<a href="tel:02135868" class="telf"><i class="fas fa-phone"></i></a>
 
 {{-- start login register modal --}}
 <div class="modal fade" id="register-login">
@@ -113,8 +115,9 @@
 <script src="{{ asset('assets/js/parallax.min.js') }}"></script>
 <script src="{{ asset('assets/js/wow.min.js') }}"></script>
 <script src="{{ asset('assets/js/form-validator.min.js') }}"></script>
-<script src="{{ asset('assets/js/contact-form-script.js') }}"></script>
+<script type="text/javascript" src="https://unpkg.com/@majidh1/jalalidatepicker/dist/jalalidatepicker.min.js"></script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
+@yield("src")
 <script>
     $("#mobile").on("keyup",function(){
         mobile = $("#mobile").val();
@@ -132,7 +135,8 @@
     });
 </script>
 <script>
-    $("#send-login-register").on("click",function(){
+
+      $("#send-login-register").on("click",function(){
         mobile = $("#mobile").val();
         if(mobile.length == 11){
             $("#result-login-register").css("color","black").html("لطفا صبر کنید");
@@ -149,6 +153,61 @@
             $("#result-login-register").html("شماره موبایل باید 11 رقم باشد");
         }
     });
+
+</script>
+<script>
+    $("#contactForm").validator().on("submit", function (event) {
+        if (event.isDefaultPrevented()) {
+            formError();
+            submitMSG(false, "آیا فرم را به درستی پر کردید؟");
+        }
+        else {
+            event.preventDefault();
+            submitForm();
+        }
+    });
+
+    function submitForm(){
+        // Initiate Variables With Form Content
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var msg_subject = $("#msg_subject").val();
+        var phone_number = $("#phone_number").val();
+        var message = $("#message").val();
+        var gridCheck = $("#gridCheck").val();
+
+        $.ajax({
+            type: "POST",
+            url: "#",
+            data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone_number=" + phone_number + "&message=" + message +"&gridCheck=" + gridCheck,
+            success : function(text){
+                if (text == "success"){
+                    formSuccess();
+                }
+                else {
+                    formError();
+                    submitMSG(false,text);
+                }
+            }
+        });
+    }
+    function formSuccess(){
+        $("#contactForm")[0].reset();
+        submitMSG(true, "پیام ارسال شد!")
+    }
+    function formError(){
+        $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass();
+        });
+    }
+    function submitMSG(valid, msg) {
+        if (valid) {
+            var msgClasses = "h4 tada animated text-success";
+        } else {
+            var msgClasses = "h4 text-danger";
+        }
+        $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+    }
 
 </script>
 </body>
