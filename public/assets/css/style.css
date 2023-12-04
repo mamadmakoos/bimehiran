@@ -763,7 +763,9 @@ p:last-child {
 .Makoos-nav .navbar .navbar-nav .nav-item:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    top: 100%
+    top: 100%;
+    border-radius: 20px;
+
 }
 
 .Makoos-nav .navbar .others-options {
@@ -1405,8 +1407,10 @@ p:last-child {
 }
 
 .insurance-boxes-area .container .insurance-boxes-inner .row .insurance-photo {
-    /*width: 50% !important;*/
     padding: 20px;
+}
+.insurance-boxes-area .container .insurance-boxes-inner .row .insurance-photo img {
+    border-radius: 30px !important;
 }
 
 .insurance-boxes-area .container .insurance-boxes-inner .row .insurance-title {

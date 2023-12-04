@@ -22,7 +22,7 @@
 @endsection
 @section("content")
     <!-- Start Main Banner Area ( home section 1 ) -->
-    <div class="main-banner jarallax" data-jarallax='{"speed": 0.3}'>
+{{--    <div class="main-banner jarallax" data-jarallax='{"speed": 0.3}'>
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
@@ -36,8 +36,41 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
     <!-- end Main Banner Area ( home section 1 ) -->
+
+    <!-- Start slider Hero -->
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="transition: transform 0.1s ease-in-out;">
+                <img src="{{asset('assets/img/slider/slider1.jpg')}}" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" style="transition: transform 0.1s ease-in-out;">
+                <img src="{{asset('assets/img/slider/slider2.jpg')}}" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" style="transition: transform 0.1s ease-in-out;">
+                <img src="{{asset('assets/img/slider/slider4.jpg')}}" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" style="transition: transform 0.1s ease-in-out;">
+                <img src="{{asset('assets/img/slider/slider5.jpg')}}" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" style="transition: transform 0.1s ease-in-out;">
+                <img src="{{asset('assets/img/slider/slider6.jpg')}}" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" style="transition: transform 0.1s ease-in-out;">
+                <img src="{{asset('assets/img/slider/slider7.jpg')}}" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" style="transition: transform 0.1s ease-in-out;">
+                <img src="{{asset('assets/img/slider/slider8.jpg')}}" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" style="transition: transform 0.1s ease-in-out;">
+                <img src="{{asset('assets/img/slider/slider9.jpg')}}" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" style="transition: transform 0.1s ease-in-out;">
+                <img src="{{asset('assets/img/slider/slider10.jpg')}}" class="d-block w-100" alt="">
+            </div>
+        </div>
+    </div>
 
     <!-- Start Featured Boxes Area ( home section 2 )  -->
     <section class="featured-boxes-area">
@@ -45,7 +78,7 @@
             <div class="featured-boxes-inner">
                 <div class="row m-0 p-0">
                     <div class="col-lg-2 col-md-6 p-0">
-                        <div class="single-featured-box">
+                        <div class="single-featured-box 0-0">
                             <div class="">
                                 <img src="{{ asset('assets/img/boxf2.png') }}" alt="">
                             </div>
@@ -87,7 +120,7 @@
             <div class="insurance-boxes-inner">
                 <div class="row">
                     <div class="insurance-photo col-sm-12 col-md-6 mt-md-2 mb-md-2">
-                        <img src="{{ asset('assets/img/1.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('assets/img/3.jpg') }}" class="card-img-top" alt="...">
                     </div>
                     <div class="insurance-title col-sm-12 col-md-6 mtb-50 rounded  shadow">
                         <h3 class="pt-3 mt-2">
@@ -98,7 +131,7 @@
                         </p>
                     </div>
                     <div class="insurance-photo d-md-none col-sm-12 col-md-6 mtb-70 ">
-                        <img src="{{ asset('assets/img/2.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('assets/img/3.jpg') }}" class="card-img-top" alt="...">
                     </div>
                     <div class="insurance-title col-sm-12 col-md-6 mt-3 mt-md-2 mb-md-2  rounded  shadow">
                         <h3 class="pt-5 mt-5">
@@ -108,10 +141,10 @@
                         </p>
                     </div>
                     <div class="insurance-photo d-none d-md-block col-sm-12 col-md-6  ">
-                        <img src="{{ asset('assets/img/2.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('assets/img/2.jpg') }}" class="card-img-top" alt="...">
                     </div>
                     <div class="insurance-photo col-sm-12 col-md-6 ">
-                        <img src="{{ asset('assets/img/3.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('assets/img/4.jpg') }}" class="card-img-top" alt="...">
                     </div>
                     <div class="insurance-title col-sm-12 col-md-6  rounded mt-3 mt-md-2 mb-md-2    shadow">
                         <h3 class="pt-3 mt-2">
@@ -120,18 +153,18 @@
                         <p class="text-justify insurance-desc p-5">در واقع بیمه عمر یک پشتوانه مالی محکم برای دوران پیری، بازنشستگی یا بعد از فوت برای بازماندگان است. قراردادی است که میان یک شرکت بیمه و شخص بیمه شونده منعقد می‌شود، که در آن بیمه شونده متعهد به پرداخت مبلغی به صورت تعیین شده می‌گردد علاوه بر سرمایه‌گذاری با سود تضمینی، از پوشش‌های متنوع و کاربردی هم بهره‌مند می‌شوند و با بروز وقایعی چون: فوت طبیعی، فوت بر اثر حادثه، نقص عضو، پرداخت هزینه‌های پزشکی حادثه، ابتلا به بیماری‌های خاص یا از کار افتادن بیمه شده، شرکت بیمه موظف خواهد بود، سرمایه بیمه شده را به‌طور یکجا یا به صورت مستمری به بیمه‌گذار یا به شخص ثالثی که وی تعیین کرده، بپردازد.</p>
                     </div>
                     <div class="insurance-photo d-md-none  col-sm-12 col-md-6 ">
-                        <img src="{{ asset('assets/img/5.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('assets/img/4.jpg') }}" class="card-img-top" alt="...">
                     </div>
                     <div class="insurance-title col-sm-12 col-md-6 rounded mt-3 mt-md-2 mb-md-2   shadow">
                         <h3 class="pt-3 mt-2">
                             بیمه درمان
                         </h3>
                         <p class="text-justify insurance-desc p-5">
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازبیمه درمان یا بیمه بهداشت و درمان، نوعی بیمه است، که پرداخت یا تحمیل هزینه‌های مختلف خدمات سلامت و پزشکی، اعم از ارتقاء سلامت، پیشگیری، درمان و توانبخشی افراد بیمه شده را، می‌پذیرد. کارفرما می‌تواند اعضای سازمان شامل کارکنان رسمی، پیمانی، قراردادی و حتی کارکنان بازنشسته خود را بیمه تکمیلی نماید؛ البته، تعداد این افراد باید از حدی فراتر رود. همه آن افراد باید تحت پوشش بیمه تامین اجتماعی با شماره کارگاهی آن سازمان باشند. در بیمه تکمیلی گروهی، می‌توان علاوه بر اعضای سازمان خانواده آن‌ها نظیر همسر، فرزندان، پدر، مادر و افراد تحت تکفل را تحت پوشش قرار داد.
+                            بیمه درمان یا بیمه بهداشت و درمان، نوعی بیمه است، که پرداخت یا تحمیل هزینه‌های مختلف خدمات سلامت و پزشکی، اعم از ارتقاء سلامت، پیشگیری، درمان و توانبخشی افراد بیمه شده را، می‌پذیرد. کارفرما می‌تواند اعضای سازمان شامل کارکنان رسمی، پیمانی، قراردادی و حتی کارکنان بازنشسته خود را بیمه تکمیلی نماید؛ البته، تعداد این افراد باید از حدی فراتر رود. همه آن افراد باید تحت پوشش بیمه تامین اجتماعی با شماره کارگاهی آن سازمان باشند. در بیمه تکمیلی گروهی، می‌توان علاوه بر اعضای سازمان خانواده آن‌ها نظیر همسر، فرزندان، پدر، مادر و افراد تحت تکفل را تحت پوشش قرار داد.
                         </p>
                     </div>
                     <div class="insurance-photo d-none d-md-block col-sm-12 col-md-6  ">
-                        <img src="{{ asset('assets/img/5.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('assets/img/4.jpg') }}" class="card-img-top" alt="...">
                     </div>
                 </div>
             </div>
@@ -145,7 +178,7 @@
             <h2 class="text-center">آخرین دسته بندی ها</h2>
             <hr>
 
-            <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 @foreach($categories as $category)
                     <div class="col">
                         <div class="card blue-gradient h-100">
@@ -166,8 +199,8 @@
     </section>
     <!-- start articles Area ( home section 3 ) -->
 
-    <!-- start ontact us Area ( home section 5 ) -->
-        <section class="contact-area ptb-70">
+    <!-- start contact us Area ( home section 5 ) -->
+        <section id="au" class="contact-area ptb-70">
             <div class="container">
                 <div class="section-title">
                     <h3>تماس با ما</h3>

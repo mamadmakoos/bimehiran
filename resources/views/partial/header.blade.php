@@ -61,9 +61,9 @@
         <div class="container">
             <div class="Makoos-responsive-menu">
                 <div class="logo">
-                    <a href="{{ route('home') }}">
-                        <img src="{{ asset('assets/img/logo/bimeh-iran-logo.png') }}" alt="logo">
-                        <img src="{{ asset('assets/img/logo/bl.png') }}" alt="logo">
+                    <a href="{{route('home')}}">
+                        <img src="{{asset('assets/img/logo/bimeh-iran-logo.png')}}" alt="logo">
+                        <img src="{{asset('assets/img/logo/bl.png')}}" alt="logo">
                     </a>
                 </div>
             </div>
@@ -80,6 +80,106 @@
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="{{ route('home') }}" class="nav-link p-0 " style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">صفحه اصلی</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link p-0  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">
+                                انواع بیمه
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link p-0  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">
+                                        بیمه حمل و نقل
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">بیمه متصدیان حمل و نقل</a></li>
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">بیمه باربری</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link p-0  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">
+                                        بیمه اتوموبیل
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">بیمه ثالث</a></li>
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">بیمه ثالث موتور</a></li>
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">بیمه بدنه</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link p-0  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">
+                                        بیمه مسئولیت
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link p-0  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">
+                                                بیمه کارفرما در قبال کارکنان
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">ساختمانی</a></li>
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">عمرانی</a></li>
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">مشاغل ( خدماتی ، صنعتی ، تجاری )</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link p-0  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">
+                                                بیمه مسئولیت عمومی
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">ناشی از اجرای عملیات ساختمانی</a></li>
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">نگهداری آسانسور</a></li>
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">مدیران و مربیان مجموعه ورزشی</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link p-0  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">
+                                                بیمه مسئولیت حرفه ای
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">پرشکان</a></li>
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">دامپزشکان</a></li>
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">وکلای رسمی دادگستری</a></li>
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">مهندسین طراح ، محاسب ، ناظر</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link p-0  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">
+                                                بیمه مسئولیت مدیران
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">هیئت مدیره ساختمان</a></li>
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">مدیران مراکز آموزشی</a></li>
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">مدیران رستوران ها</a></li>
+                                                <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">مدیران مهد کودک</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link p-0  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">
+                                        بیمه آتش سوزی
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">واحد های مسکونی</a></li>
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">مراکز صنعتی</a></li>
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">مراکز غیرصنعتی</a></li>
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">طرح حامی</a></li>
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">طرح اصناف</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link p-0  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">
+                                        بیمه اشخاص
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">عمر</a></li>
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">حوادث</a></li>
+                                        <li><a class="dropdown-item font-15" href="" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">درمان</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a href="{{ route('about_us') }}" class="nav-link p-0 " style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">درباره ما</a></li>
                         <li class="nav-item"><a href="{{ route('weblog') }}" class="nav-link p-0 " style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">وبلاگ</a></li>
                         @auth()
@@ -88,9 +188,9 @@
                                     {{ Auth::user()->user_name }}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item @endiffont-15" href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">پروفایل</a></li>
-                                    <li><a class="dropdown-item @endiffont-15" href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">اعتبار {{ $credit }} تومان </a></li>
-                                    <li><a class="dropdown-item @endiffont-15" href="{{ route('logout') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">خروج</a></li>
+                                    <li><a class="dropdown-item font-15" href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">پروفایل</a></li>
+                                    <li><a class="dropdown-item font-15" href="{{ route('user_profile') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">اعتبار {{ $credit }} تومان </a></li>
+                                    <li><a class="dropdown-item font-15" href="{{ route('logout') }}" style="font-size: {{ $setting['a_size']['value'] }} !important; @if(isset($menu))color: var(--primary) !important; @endif padding: 0px !important;">خروج</a></li>
                                 </ul>
                             </li>
                         @endauth

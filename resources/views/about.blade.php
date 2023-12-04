@@ -174,20 +174,15 @@
                 <h1 class="display-5 mb-5">مفتخریم که به ملتی مثل شما خدمت میکنیم</h1>
             </div>
             <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                <div class="col-lg-4">
-                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4 px-md-3">
+                <div class="col-lg-4 align-self-center">
+                    <div class="nav nav-pills d-flex justify-content-between me-4 px-md-3">
                         <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
                             <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>لوح 1</h5>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
                             <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>لوح 2</h5>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>لوح 3</h5>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>لوح 4</h5>
-                        </button>
+
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -205,7 +200,7 @@
                                     <p class="text-justify mb-4" dir="rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p><p><i class="fa fa-check text-primary me-3"></i>یاربری</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>حمل و نقل</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>ثالث</p>
-                                    <a href="" class="btn btn-primary py-3 mt-3">بیشتر بدانید</a>
+                                    <a href="{{ asset('assets/img/loh/loh2.jpg') }}" target="_blank" class="btn btn-primary py-3 mt-3">مشاهده عکس</a>
                                 </div>
                             </div>
                         </div>
@@ -222,41 +217,7 @@
                                     <p><i class="fa fa-check text-primary me-3"></i>یاربری</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>حمل و نقل</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>ثالث</p>
-                                    <a href="" class="btn btn-primary py-3 mt-3">بیشتر بدانید</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-3">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="{{ asset('assets/img/loh/loh2.jpg') }}" style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-4">لوح تقدیر 20 ساله از بیمه ایران</h3>
-                                    <p class="text-justify mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>یاربری</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>حمل و نقل</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>ثالث</p>
-                                    <a href="" class="btn btn-primary py-3 mt-3">بیشتر بدانید</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-4">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="{{ asset('assets/img/loh/loh3.jpg') }}" style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-4">لوح تقدیر 20 ساله از بیمه ایران</h3>
-                                    <p class="text-justify mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>یاربری</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>حمل و نقل</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>ثالث</p>
-                                    <a href="" class="btn btn-primary py-3 mt-3">بیشتر بدانید</a>
+                                    <a href="{{ asset('assets/img/loh/loh1.jpg') }}" target="_blank" class="btn btn-primary py-3 mt-3">مشاهده عکس</a>
                                 </div>
                             </div>
                         </div>

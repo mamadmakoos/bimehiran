@@ -94,8 +94,6 @@
     .single-featured-box {
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 120px;
-        padding-bottom: 36px
     }
     .single-featured-box .icon {
         top: 25px;
@@ -231,6 +229,10 @@
     }
 }
 @media only screen and (min-width:768px) and (max-width:991px) {
+   .Makoos-responsive-menu > .logo{
+        width: 40px !important;
+        height: 40px !important;
+    }
     .main-banner {
         height: 100%;
         padding-top: 220px;

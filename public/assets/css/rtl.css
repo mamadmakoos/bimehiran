@@ -56,8 +56,9 @@ ol, ul {
     margin-right: 1px
 }
 .Makoos-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
-    right: -250px;
-    left: auto
+    right: 250px;
+    left: auto;
+    border-radius: 20px;
 }
 .Makoos-nav .navbar .navbar-nav .nav-item:first-child a {
     margin-right: 0;

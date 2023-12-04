@@ -24,6 +24,11 @@
                     </aside>
                 </div>
                 <div class="col-lg-8 ">
+                    @if(!isset($user->ipc) && $user->ipc == '0')
+                    <div class="alert alert-danger">
+                       <h5> اگر تازه ثبت نام کرده اید رمز عبور فعلی شما شماره موبایل می باسد</h5>
+                    </div>
+                    @endif
                     <div class="profile">
                         <form action="{{ route('user_password_action') }}" method="post" class="">
                             @csrf
